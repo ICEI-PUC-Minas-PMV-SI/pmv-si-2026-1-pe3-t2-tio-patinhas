@@ -1,12 +1,15 @@
 # 1. INTRODUÇÃO
 
 A organização das finanças pessoais é um aspecto fundamental para garantir equilíbrio financeiro e uma tomada de decisões melhor no dia a dia, o avanço da tecnologia e o aumento do uso de aplicações digitais, ferramentas web têm se tornado cada vez mais importantes no controle de receitas e despesas.
+
 Atualmente, diversas soluções digitais permitem que usuários registrem e acompanhem suas movimentações financeiras de forma prática e organizada. Essas ferramentas contribuem para uma visualização melhor dos gastos, promovendo maior consciência financeira e auxiliando no planejamento da educação financeira.
+
 Este projeto propõe o desenvolvimento de uma solução web funcional e acessível denominada “Tio Patinhas”, que permite ao usuário registrar, categorizar e visualizar seus movimentos financeiros de maneira simples e intuitiva, contribuindo para educação financeira e tomada de decisões mais assertivas.
 
 ## 1.1. Problema
 
 O sistema de gestão financeira “Tio Patinhas” busca resolver a dificuldade que muitas pessoas enfrentam para controlar e compreender suas próprias finanças. Frequentemente, receitas e despesas são registradas de forma desorganizada — ou nem chegam a ser registradas — o que dificulta a visualização clara de para onde o dinheiro está sendo direcionado. Essa falta de controle pode levar a gastos excessivos, dificuldades no planejamento financeiro e tomada de decisões pouco conscientes. 
+
 Dessa forma, o sistema propõe centralizar e organizar as informações financeiras do usuário em um ambiente simples e acessível, permitindo melhor acompanhamento dos gastos, maior controle do orçamento e apoio na construção de hábitos financeiros mais saudáveis.
 
 ## 1.2. Objetivos do trabalho
