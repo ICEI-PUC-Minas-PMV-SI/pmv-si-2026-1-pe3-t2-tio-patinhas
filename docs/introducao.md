@@ -18,7 +18,9 @@ O objetivo principal deste projeto é o desenvolvimento de uma solução web fun
 
 ## 1.3. Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O desenvolvimento de um sistema de gestão financeira pessoal se justifica pela dificuldade que muitas pessoas possuem em organizar e acompanhar suas receitas e despesas no dia a dia, a falta de controle financeiro pode gerar gastos desnecessários, dificultar o planejamento e comprometer a tomada de decisões conscientes.
+
+Com o avanço das tecnologias digitais, aplicações web tornam-se ferramentas acessíveis para auxiliar no controle financeiro, nesse cenário, o sistema foi proposto com o objetivo de oferecer uma solução simples e intuitiva para o registro e acompanhamento de movimentações financeiras, contribuindo para uma melhor organização e compreensão das finanças pessoais.
 
 ## 1.4. Público alvo
 
