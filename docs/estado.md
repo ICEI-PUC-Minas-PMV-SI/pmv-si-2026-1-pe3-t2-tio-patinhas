@@ -31,7 +31,11 @@ Estudos também foram realizados na Universidade Federal de Sergipe (UFS), onde 
 
 #### 4. Quais as divergências dos pesquisadores sobre o assunto?
 
---
+Apesar do consenso sobre a importância do uso de tecnologias digitais no controle das finanças pessoais, existem algumas divergências entre os pesquisadores em relação à forma mais eficaz de promover esse controle, alguns estudos defendem que aplicativos financeiros com muitas funcionalidades, como gráficos detalhados, relatórios avançados e integração com bancos, oferecem maior suporte ao planejamento financeiro. 
+
+Por outro lado, outros pesquisadores argumentam que sistemas muito complexos podem dificultar o uso por parte dos usuários, especialmente aqueles com menor familiaridade com tecnologia ou com conceitos financeiros, nesse sentido, alguns estudos apontam que ferramentas mais simples e intuitivas tendem a ter maior adesão e uso contínuo pelos usuários. 
+
+Além disso, há divergências sobre o papel dessas ferramentas na educação financeira, enquanto alguns pesquisadores acreditam que aplicativos podem contribuir diretamente para o desenvolvimento de hábitos financeiros mais responsáveis, outros defendem que essas ferramentas funcionam apenas como apoio, sendo necessário também o desenvolvimento de conhecimentos financeiros por meio da educação formal ou de programas de orientação financeira.
 
 #### 5. Quais aspectos carecem de maior abordagem?
 
