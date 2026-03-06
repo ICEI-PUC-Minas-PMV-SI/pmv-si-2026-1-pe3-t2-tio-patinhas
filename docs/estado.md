@@ -3,15 +3,27 @@ O estado da arte é um mapeamento de toda a produção acadêmica sobre um assun
 
 #### 1. Quais pesquisas estão sendo desenvolvidas sobre esse tema?
 
+Nos últimos anos, diversas pesquisas têm sido desenvolvidas com o objetivo de compreender como tecnologias digitais podem auxiliar no controle das finanças pessoais e na promoção da educação financeira. Esses estudos normalmente investigam o uso de aplicativos, plataformas digitais e sistemas de gestão financeira que permitem registrar receitas, despesas e acompanhar o orçamento pessoal.
+
+Uma linha de pesquisa bastante comum analisa o uso de aplicativos de gestão financeira e sua influência no comportamento financeiro das pessoas. Esses estudos procuram entender como ferramentas digitais podem ajudar os usuários a planejar gastos, organizar o orçamento e tomar decisões financeiras mais conscientes. Em muitos casos, são realizadas pesquisas com usuários de aplicativos para identificar hábitos financeiros e avaliar quais funcionalidades são mais úteis para o controle do dinheiro.
+
+Outra área de pesquisa envolve o desenvolvimento de sistemas ou aplicativos de controle financeiro, nos quais pesquisadores criam protótipos de aplicações para registrar receitas e despesas, categorizar gastos e gerar relatórios financeiros. Esses projetos geralmente incluem avaliações de usabilidade e experiência do usuário, buscando verificar se a ferramenta realmente facilita o gerenciamento das finanças pessoais.
+
+Também existem estudos voltados para a relação entre tecnologia e educação financeira. Nessas pesquisas, aplicativos e plataformas digitais são utilizados como ferramentas para ensinar conceitos financeiros e incentivar hábitos mais responsáveis no uso do dinheiro. Os resultados indicam que o uso de tecnologias pode tornar o aprendizado sobre finanças mais acessível e prático para diferentes públicos.
+
+Além disso, alguns trabalhos analisam o impacto das novas tecnologias financeiras (fintechs, bancos digitais e aplicativos de gerenciamento financeiro) no comportamento financeiro das pessoas. Essas pesquisas buscam compreender como essas ferramentas estão transformando a forma como os indivíduos controlam seus gastos, realizam pagamentos e planejam suas finanças pessoais.
+
+De maneira geral, as pesquisas atuais demonstram um crescente interesse acadêmico no uso de tecnologias digitais para apoiar o controle financeiro, melhorar a educação financeira e facilitar o acesso a ferramentas de planejamento financeiro pessoal.
+
+
+#### 2. Quem está pesquisando e onde?
+
 O tema de gestão financeira pessoal e uso de ferramentas digitais para controle financeiro tem sido amplamente pesquisado em diferentes universidades e centros de pesquisa, tanto no Brasil quanto no exterior. Essas pesquisas buscam compreender como as pessoas organizam suas finanças, quais dificuldades enfrentam no controle de receitas e despesas e como tecnologias digitais podem auxiliar nesse processo.
 
 No Brasil, diversas instituições de ensino superior têm desenvolvido estudos relacionados à educação financeira e ao comportamento financeiro dos indivíduos. Pesquisadores da Universidade Federal do Rio Grande do Norte (UFRN) analisaram o conhecimento de estudantes universitários sobre finanças pessoais, identificando que muitos possuem interesse no tema, porém apresentam dificuldades na organização e no planejamento de suas finanças.
 
 Estudos também foram realizados na Universidade Federal de Sergipe (UFS), onde pesquisadores investigaram como estudantes administram suas finanças pessoais e quais práticas de planejamento financeiro são adotadas no cotidiano, utilizando questionários e análises estatísticas para compreender os hábitos financeiros dos participantes. Dessa forma, o desenvolvimento de sistemas digitais de gestão financeira, como o proposto neste projeto, surge como uma alternativa tecnológica para facilitar o acompanhamento de receitas e despesas e incentivar práticas financeiras mais conscientes.
 
-#### 2. Quem está pesquisando e onde?
-
---
 
 #### 3. O que as atuais pesquisas científicas concluíram sobre o tema?
 
