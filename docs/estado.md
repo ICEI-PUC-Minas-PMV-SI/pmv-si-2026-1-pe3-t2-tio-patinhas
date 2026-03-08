@@ -27,7 +27,11 @@ Estudos também foram realizados na Universidade Federal de Sergipe (UFS), onde 
 
 #### 3. O que as atuais pesquisas científicas concluíram sobre o tema?
 
---
+De modo geral, os estudos concluem que grande parte da população, especialmente jovens e estudantes universitários, apresenta dificuldades no controle e no planejamento de suas finanças pessoais. Lima et al. (2019), ao investigar o conhecimento financeiro de estudantes universitários, constataram que, embora exista interesse pelo tema, há lacunas significativas na organização e no gerenciamento das receitas e despesas no cotidiano.
+
+Nessa mesma perspectiva, Santos et al. (2021) identificaram que estudantes do ensino superior adotam práticas financeiras pouco estruturadas, evidenciando a necessidade de ferramentas e estratégias que auxiliem no planejamento e no acompanhamento das movimentações financeiras de forma mais organizada e consciente.
+
+No que diz respeito ao uso de tecnologias digitais, as pesquisas concluem, de maneira ampla, que aplicativos e sistemas de gestão financeira exercem influência positiva no comportamento financeiro dos usuários, contribuindo para maior consciência sobre os gastos, melhor organização do orçamento e apoio na tomada de decisões. Além disso, os estudos apontam que ferramentas digitais têm potencial para tornar a educação financeira mais acessível e prática, especialmente quando apresentadas por meio de interfaces simples e intuitivas, adequadas ao perfil dos usuários.
 
 #### 4. Quais as divergências dos pesquisadores sobre o assunto?
 
