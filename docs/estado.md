@@ -45,10 +45,7 @@ Além disso, há divergências sobre o papel dessas ferramentas na educação fi
 
 Apesar da existência de diversas soluções de gestão financeira pessoal, ainda se observam limitações relacionadas à usabilidade, à simplicidade da interface e ao suporte à educação financeira.       Muitas aplicações apresentam excesso de funcionalidades ou complexidade desnecessária, dificultando o uso por pessoas com menor conhecimento técnico. Além disso, há carência de recursos que          auxiliem   na interpretação clara das informações financeiras, evidenciando a necessidade de sistemas mais acessíveis, intuitivos e centrados no usuário.
 
-#### É importante referenciar estas pesquisas, fazendo as devidas citações de acordo com as normas da ABNT e colocando as referências completas ao final do trabalho.
 
-LIMA, Ruth Sândilla et al. The study of personal finances at the university level. Research, Society and Development, 2019. Disponível em: https://rsdjournal.org/rsd/article/view/656
-. Acesso em: 5 mar. 2026.
+# Referências
 
-SANTOS, et al. Finanças pessoais: uma análise da gestão financeira dos alunos do Centro de Ciências Sociais Aplicadas da UFS. Universidade Federal de Sergipe, 2021. Disponível em: https://ri.ufs.br/jspui/handle/riufs/15123
-. Acesso em: 5 mar. 2026.
+[Referências](/docs/referencias.md)
