@@ -1,10 +1,12 @@
 # 1. INTRODUÇÃO
+A organização das finanças pessoais é um aspecto fundamental para garantir equilíbrio financeiro e auxiliar na tomada de decisões no cotidiano. O controle adequado de receitas e despesas permite que indivíduos planejem melhor seus gastos, evitem endividamentos e tenham maior consciência sobre sua situação financeira (CERBASI, 2014).
+Com o avanço da tecnologia e a popularização de aplicações digitais, ferramentas web têm se tornado importantes aliadas no gerenciamento financeiro pessoal. Essas soluções permitem que usuários registrem, acompanhem e analisem suas movimentações financeiras de forma prática e organizada, facilitando a visualização de gastos e contribuindo para o desenvolvimento da educação financeira (BACEN, 2021).
+Nesse contexto, este projeto propõe o desenvolvimento de uma solução web funcional e acessível denominada “Tio Patinhas”, que permite ao usuário registrar, categorizar e visualizar suas movimentações financeiras de maneira simples e intuitiva. A ferramenta busca auxiliar no controle financeiro pessoal, contribuindo para uma melhor organização das finanças e para a tomada de decisões mais conscientes.
 
-A organização das finanças pessoais é um aspecto fundamental para garantir equilíbrio financeiro e uma tomada de decisões melhor no dia a dia, o avanço da tecnologia e o aumento do uso de aplicações digitais, ferramentas web têm se tornado cada vez mais importantes no controle de receitas e despesas.
-
-Atualmente, diversas soluções digitais permitem que usuários registrem e acompanhem suas movimentações financeiras de forma prática e organizada. Essas ferramentas contribuem para uma visualização melhor dos gastos, promovendo maior consciência financeira e auxiliando no planejamento da educação financeira.
-
-Este projeto propõe o desenvolvimento de uma solução web funcional e acessível denominada “Tio Patinhas”, que permite ao usuário registrar, categorizar e visualizar seus movimentos financeiros de maneira simples e intuitiva, contribuindo para educação financeira e tomada de decisões mais assertivas.
+Referências: CERBASI, Gustavo. Casais inteligentes enriquecem juntos. São Paulo: Editora Gente, 2014.
+BANCO CENTRAL DO BRASIL (BACEN). Cidadania Financeira: educação financeira. Brasília: Banco Central do Brasil, 2021. Disponível em: https://www.bcb.gov.br
+Acesso em: 12 mar. 2026.
+CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
 
 ## 1.1. Problema
 
