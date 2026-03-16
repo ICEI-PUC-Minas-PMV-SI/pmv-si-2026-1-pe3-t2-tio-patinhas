@@ -6,7 +6,13 @@ Descrever e especificar as necessidades dos usuários que devem ser atendidas pe
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+
+O produto será denominado **Tio Patinhas – Sistema de Gestão Financeira Pessoal**. A aplicação é composta pelos seguintes módulos principais:
+
+- **Módulo de Autenticação:** responsável pelo cadastro e login de usuários.
+- **Módulo de Transações:** permite o registro, edição, exclusão e consulta de receitas e despesas.
+- **Módulo de Categorias:** permite a criação e gerenciamento de categorias para classificação das movimentações financeiras.
+- **Módulo de Dashboard/Relatórios:** apresenta visualmente o resumo financeiro por meio de gráficos e painéis.
 
 ### 3.2.2 Missão do produto
 Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
