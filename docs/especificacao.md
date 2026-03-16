@@ -15,7 +15,7 @@ O produto será denominado **Tio Patinhas – Sistema de Gestão Financeira Pess
 - **Módulo de Dashboard/Relatórios:** apresenta visualmente o resumo financeiro por meio de gráficos e painéis.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Oferecer ao usuário uma ferramenta web simples, intuitiva e acessível para o registro, categorização e acompanhamento de suas movimentações financeiras pessoais, contribuindo para uma melhor organização do orçamento e para a tomada de decisões financeiras mais conscientes.
 
 ### 3.2.3 Limites do produto
 O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
