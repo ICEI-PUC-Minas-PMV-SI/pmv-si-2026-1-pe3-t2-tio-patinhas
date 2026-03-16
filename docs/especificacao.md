@@ -62,11 +62,15 @@ O sistema **Tio Patinhas** não contempla:
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
-|--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+|--------|--------------------------------------|
+| RNF01 | **Usabilidade:** A interface deve ser simples, intuitiva e responsiva, adaptando-se a diferentes tamanhos de tela (desktop e dispositivos móveis). |
+| RNF02 | **Desempenho:** O sistema deve responder às interações do usuário em até 3 segundos em condições normais de uso. |
+| RNF03 | **Segurança:** As senhas dos usuários devem ser armazenadas com criptografia (hash). O acesso aos dados deve ser restrito ao usuário autenticado. |
+| RNF04 | **Compatibilidade:** A aplicação deve funcionar nos principais navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edge e Safari). |
+| RNF05 | **Disponibilidade:** O sistema deve estar disponível para acesso via navegador web, sem necessidade de instalação de software adicional. |
+| RNF06 | **Manutenibilidade:** O código deve ser organizado de forma modular, seguindo boas práticas de desenvolvimento, facilitando futuras manutenções e evoluções. |
+| RNF07 | **Acessibilidade:** A interface deve adotar boas práticas de acessibilidade web (contraste adequado, textos descritivos em imagens e navegação por teclado). |
+| RNF08 | **Persistência de dados:** Os dados dos usuários devem ser armazenados em banco de dados relacional, garantindo integridade e consistência das informações. |
 
 ### 3.3.3 Usuários 
 
