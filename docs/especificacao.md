@@ -30,11 +30,15 @@ O sistema **Tio Patinhas** não contempla:
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
-|--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|---|-----------|----------------------|
+| 1 | Registro simples e rápido de receitas e despesas | Essencial |
+| 2 | Categorização das movimentações financeiras | Essencial |
+| 3 | Visualização clara do saldo e do fluxo de caixa | Essencial |
+| 4 | Relatórios e gráficos do histórico financeiro | Essencial |
+| 5 | Acesso seguro com autenticação por senha | Essencial |
+| 6 | Interface intuitiva, sem necessidade de conhecimento técnico prévio | Recomendável |
+| 7 | Apoio à construção de hábitos financeiros mais saudáveis | Recomendável |
+| 8 | Filtros de transações por período, tipo e categoria | Desejável |
 
 ## 3.3 Descrição geral do produto
 
