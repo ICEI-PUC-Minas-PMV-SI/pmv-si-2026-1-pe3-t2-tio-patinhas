@@ -75,10 +75,8 @@ O sistema **Tio Patinhas** não contempla:
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
-|--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+|------|-----------|
+| Usuário | Pessoa física que utiliza o sistema para gerenciar suas finanças pessoais. Possui acesso completo às suas próprias transações, categorias, relatórios e configurações de perfil. É o único ator do sistema, pois a aplicação é de uso individual. |
 
 ## 3.4 Modelagem do Sistema
 
