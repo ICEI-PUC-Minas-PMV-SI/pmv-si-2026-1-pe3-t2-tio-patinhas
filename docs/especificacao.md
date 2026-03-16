@@ -1,9 +1,7 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos usuários que devem ser atendidas pelo projeto **Tio Patinhas – Sistema de Gestão Financeira Pessoal**, definindo os requisitos funcionais, não funcionais, atores do sistema e a modelagem necessária para orientar o desenvolvimento da aplicação web.
 
 ## 3.2 Escopo do produto
 
