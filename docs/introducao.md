@@ -1,25 +1,19 @@
 # 1. INTRODUÇÃO
-A organização das finanças pessoais é um aspecto fundamental para garantir equilíbrio financeiro e auxiliar na tomada de decisões no cotidiano. O controle adequado de receitas e despesas permite que indivíduos planejem melhor seus gastos, evitem endividamentos e tenham maior consciência sobre sua situação financeira (CERBASI, 2014).
+Organizar as finanças pessoais é um dos maiores desafios da vida adulta — e também um dos mais importantes. Saber exatamente para onde o dinheiro está indo faz toda a diferença na hora de planejar uma compra, guardar uma reserva ou simplesmente chegar ao fim do mês sem aperto. Quando essa organização não acontece, as consequências aparecem cedo ou tarde: segundo o Mapa da Inadimplência da Serasa, o Brasil encerrou 2024 com cerca de 73,5 milhões de pessoas em situação de inadimplência Serasa — um número que evidencia o quanto ainda precisamos avançar em termos de educação e consciência financeira.
 
-Com o avanço da tecnologia e a popularização de aplicações digitais, ferramentas web têm se tornado importantes aliadas no gerenciamento financeiro pessoal. Essas soluções permitem que usuários registrem, acompanhem e analisem suas movimentações financeiras de forma prática e organizada, facilitando a visualização de gastos e contribuindo para o desenvolvimento da educação financeira (BACEN, 2021).
+Felizmente, a tecnologia tem ajudado muito nessa jornada. Com investimentos anuais de R$ 45 bilhões em tecnologia bancária e o surgimento de mais de 1,3 mil startups de finanças, o setor financeiro brasileiro vive uma transformação intensa Inupcontabil, e parte disso chega diretamente ao bolso do cidadão comum na forma de aplicativos e ferramentas digitais. Soluções como Mobills, Minhas Economias e Spendee centralizam receitas, despesas, saldos e cartões em um só lugar, oferecendo gráficos e relatórios que mostram com clareza onde o dinheiro está indo. Diário do Nordeste O resultado é que controlar as finanças deixou de ser algo restrito a quem tem contador ou conhecimento técnico — qualquer pessoa com um smartphone já consegue fazer isso.
 
-Diante desse cenário, este trabalho apresenta o desenvolvimento de uma aplicação web chamada “Tio Patinhas”, voltada ao controle de finanças pessoais, que permite ao usuário registrar, categorizar e visualizar suas movimentações financeiras de maneira simples e intuitiva. A ferramenta busca auxiliar no controle financeiro pessoal, contribuindo para uma melhor organização das finanças e para a tomada de decisões mais conscientes.
-
-Referências: 
-CERBASI, Gustavo. Casais inteligentes enriquecem juntos. São Paulo: Editora Gente, 2014.
-BANCO CENTRAL DO BRASIL (BACEN). Cidadania Financeira: educação financeira. Brasília: Banco Central do Brasil, 2021. Disponível em: https://www.bcb.gov.br
-Acesso em: 12 mar. 2026.
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
+É nesse contexto que surge o "Tio Patinhas", uma aplicação web desenvolvida para quem quer dar esse primeiro passo rumo à organização financeira. Por meio dela, o usuário pode registrar suas movimentações, agrupá-las por categorias e visualizar tudo de forma clara e sem burocracia. O propósito é simples e direto: ajudar as pessoas a entenderem melhor sua própria situação financeira e a fazerem escolhas mais conscientes no dia a dia.
 
 ## 1.1. Problema
 
-O sistema de gestão financeira “Tio Patinhas” busca resolver a dificuldade que muitas pessoas enfrentam para controlar e compreender suas próprias finanças. Frequentemente, receitas e despesas são registradas de forma desorganizada — ou nem chegam a ser registradas — o que dificulta a visualização clara de para onde o dinheiro está sendo direcionado. Essa falta de controle pode levar a gastos excessivos, dificuldades no planejamento financeiro e tomada de decisões pouco conscientes. 
+O sistema de gestão financeira “Tio Patinhas” busca resolver a dificuldade que muitas pessoas enfrentam para controlar e compreender suas próprias finanças. Frequentemente, receitas e despesas são registradas de forma desorganizada, o que dificulta a visualização clara de para onde o dinheiro está sendo direcionado. Essa falta de controle pode levar a gastos excessivos, dificuldades no planejamento financeiro e tomada de decisões pouco conscientes. 
 
 Dessa forma, o sistema propõe centralizar e organizar as informações financeiras do usuário em um ambiente simples e acessível, permitindo melhor acompanhamento dos gastos, maior controle do orçamento e apoio na construção de hábitos financeiros mais saudáveis.
 
 ## 1.2. Objetivos do trabalho
 
-O objetivo geral deste projeto é desenvolver uma aplicação web de gestão financeira pessoal — o "Tio Patinhas" — que seja funcional, acessível e capaz de apoiar o usuário no controle consciente de suas finanças, sem exigir conhecimentos técnicos prévios.
+O objetivo geral deste projeto é desenvolver uma aplicação web de gestão financeira pessoal que seja funcional, acessível e capaz de apoiar o usuário no controle consciente de suas finanças, sem exigir conhecimentos técnicos prévios.
 
 Para isso, foram definidos os seguintes objetivos específicos:
 
@@ -30,9 +24,9 @@ Para isso, foram definidos os seguintes objetivos específicos:
 
 ## 1.3. Justificativa
 
-O desenvolvimento de um sistema de gestão financeira pessoal se justifica pela dificuldade que muitas pessoas possuem em organizar e acompanhar suas receitas e despesas no dia a dia, a falta de controle financeiro pode gerar gastos desnecessários, dificultar o planejamento e comprometer a tomada de decisões conscientes.
+Controlar as próprias finanças parece simples, mas na prática é algo que muita gente deixa de lado. Sem um registro claro de entradas e saídas, os gastos escapam do controle, o planejamento fica comprometido e as decisões financeiras acabam sendo tomadas no escuro. O reflexo disso aparece nos dados: o Brasil fechou 2024 com cerca de 73,5 milhões de pessoas inadimplentes Serasa, o que evidencia o impacto real da falta de organização financeira.
 
-Com o avanço das tecnologias digitais, aplicações web tornam-se ferramentas acessíveis para auxiliar no controle financeiro, nesse cenário, o sistema foi proposto com o objetivo de oferecer uma solução simples e intuitiva para o registro e acompanhamento de movimentações financeiras, contribuindo para uma melhor organização e compreensão das finanças pessoais.
+Foi pensando nisso que o "Tio Patinhas" foi desenvolvido. Uma aplicação web simples e intuitiva que centraliza o registro e o acompanhamento das movimentações financeiras, ajudando o usuário a entender melhor para onde seu dinheiro está indo e a tomar decisões mais conscientes no dia a dia.
 
 ## 1.4. Público alvo
 
