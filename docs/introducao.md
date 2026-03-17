@@ -31,3 +31,8 @@ Foi pensando nisso que o "Tio Patinhas" foi desenvolvido. Uma aplicação web si
 ## 1.4. Público alvo
 
 A solução proposta destina-se a jovens e adultos entre 18 e 45 anos, como estudantes, profissionais em início de carreira e trabalhadores autônomos que buscam maior controle das finanças pessoais. Embora utilizem tecnologias digitais com frequência, muitos apresentam dificuldades no registro organizado de receitas e despesas e na análise dos próprios gastos. O sistema visa atender a esse público por meio de uma ferramenta web simples, intuitiva e funcional, que auxilie no acompanhamento financeiro e na tomada de decisões mais conscientes.
+
+
+# Referências
+
+[Referências](/docs/referencias.md)
