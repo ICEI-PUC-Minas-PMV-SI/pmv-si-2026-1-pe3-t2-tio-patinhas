@@ -85,3 +85,10 @@ CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenci
 #### Referência 22 -
 
 Artigo (sem autor indicado). A relação entre educação financeira e endividamento estudantil. Revista Foco, 2024. Disponível em: https://ojs.focopublicacoes.com.br. Acesso em: 17 mar. 2026.
+
+Referência 23 - LUSARDI, Annamaria; MITCHELL, Olivia S.
+The importance of financial literacy: opening a new field. Cambridge: National Bureau of Economic Research, 2023. Disponível em: https://www.nber.org/papers/w31145
+
+Referência 24 - ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+OECD/INFE 2023 International Survey of Adult Financial Literacy. Paris: OECD Publishing, 2023. Disponível em: https://www.oecd.org/en/publications/oecd-infe-2023-international-survey-of-adult-financial-literacy_56003a32-en.html
+
