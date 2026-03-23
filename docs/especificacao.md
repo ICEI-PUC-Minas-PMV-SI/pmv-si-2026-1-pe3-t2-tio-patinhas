@@ -81,7 +81,7 @@ O sistema **Tio Patinhas** não contempla:
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+Como observado no diagrama de casos de uso da Figura 1, o usuário poderá se cadastrar, se autenticar e gerenciar sua conta, visualizar seu saldo atual e o dashboard financeiro. Entre outras funções.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
