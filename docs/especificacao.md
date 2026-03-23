@@ -85,7 +85,7 @@ Como observado no diagrama de casos de uso da Figura 1, o usuário poderá se ca
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](<img width="544" height="369" alt="Captura de tela de 2026-03-23 19-14-13" src="https://github.com/user-attachments/assets/befc828c-3140-42da-9259-8be10a3196b1" />)
+![dcu](https://github.com/user-attachments/assets/befc828c-3140-42da-9259-8be10a3196b1)
  
 ### 3.4.2 Descrições de Casos de Uso
 
