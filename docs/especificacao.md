@@ -85,11 +85,11 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](casodeuso.png)
+![dcu](https://github.com/user-attachments/assets/413ce899-16f9-43dc-9d96-eacb42493304)
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+Cada caso de uso deve ter a sua descrição representada nesta seção.
 
 #### Gerenciar Professor (CSU01)
 
