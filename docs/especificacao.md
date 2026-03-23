@@ -85,39 +85,13 @@ Como observado no diagrama de casos de uso da Figura 1, o usuário poderá se ca
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/413ce899-16f9-43dc-9d96-eacb42493304)
+![dcu](<img width="544" height="369" alt="Captura de tela de 2026-03-23 19-14-13" src="https://github.com/user-attachments/assets/befc828c-3140-42da-9259-8be10a3196b1" />)
  
 ### 3.4.2 Descrições de Casos de Uso
 
 Cada caso de uso deve ter a sua descrição representada nesta seção.
 
-#### Cadastrar-se (CSU01)
-
-Sumário: O Usuário realiza seu cadastro no sistema informando nome, e-mail e senha para criação de sua conta de acesso.
-
-Ator Primário: Usuário.
-
-Ator Secundário: Não há.
-
-Pré-condições: O Usuário não deve possuir cadastro prévio com o mesmo e-mail.
-
-Fluxo Principal:
-
-1) O Usuário requisita seu cadastro no sistema.  
-2) O Sistema apresenta o formulário de cadastro.  
-3) O Usuário informa nome, e-mail e senha.  
-4) O Sistema valida os dados informados.  
-5) O Sistema verifica se já existe cadastro com o e-mail informado.  
-6) Não existindo cadastro anterior, o Sistema registra o novo usuário.  
-7) O Sistema confirma a realização do cadastro.  
-
-Fluxo Alternativo (5): E-mail já cadastrado
-
-a) O Sistema identifica que o e-mail informado já está vinculado a uma conta. <br>
-b) O Sistema informa ao Usuário que já existe cadastro com esse e-mail. <br>
-c) O Sistema solicita a inserção de outro e-mail ou o cancelamento da operação. <br>
-
-#### Autenticar-se (CSU02)
+#### Autenticar-se (CSU01)
 
 Sumário: O Usuário realiza login no sistema por meio de e-mail e senha para acessar sua área pessoal.
 
@@ -143,15 +117,20 @@ a) O Sistema verifica que o e-mail ou a senha são inválidos. <br>
 b) O Sistema informa erro na autenticação. <br>
 c) O Sistema solicita nova tentativa de login. <br>
 
-#### Recuperar Senha (CSU03)
+Fluxo de Extensão (2): Recuperar Senha
 
-Sumário: O Usuário solicita a recuperação de sua senha por meio do e-mail cadastrado no sistema.
+a) Caso o Usuário não se recorde da senha, ele seleciona a opção de recuperação de senha. <br>
+b) O caso de uso **Recuperar Senha (CSU02)** é acionado. <br>
+
+#### Recuperar Senha (CSU02)
+
+Sumário: O Usuário solicita a recuperação de sua senha por meio do e-mail cadastrado no sistema, como extensão do caso de uso de autenticação.
 
 Ator Primário: Usuário.
 
 Ator Secundário: Serviço de E-mail.
 
-Pré-condições: O Usuário deve possuir cadastro com e-mail válido no sistema.
+Pré-condições: O Usuário deve possuir cadastro com e-mail válido no sistema e ter acessado a funcionalidade a partir do caso de uso Autenticar-se.
 
 Fluxo Principal:
 
@@ -171,7 +150,7 @@ a) O Sistema verifica que o e-mail informado não está cadastrado. <br>
 b) O Sistema informa que não foi encontrada conta vinculada ao e-mail informado. <br>
 c) O caso de uso é encerrado ou o Usuário pode tentar novamente. <br>
 
-#### Gerenciar Perfil (CSU04)
+#### Gerenciar Perfil (CSU03)
 
 Sumário: O Usuário realiza a gestão de seus dados pessoais e de sua senha de acesso.
 
@@ -197,7 +176,7 @@ a) O Sistema identifica inconsistências ou dados inválidos. <br>
 b) O Sistema informa o erro ao Usuário. <br>
 c) O Sistema solicita a correção dos dados. <br>
 
-#### Gerenciar Transações (CSU05)
+#### Gerenciar Transações (CSU04)
 
 Sumário: O Usuário realiza a gestão de suas transações financeiras, podendo incluir, alterar, excluir e consultar receitas e despesas.
 
@@ -238,9 +217,9 @@ b) O Sistema apresenta uma lista de transações cadastradas. <br>
 c) O Usuário seleciona a transação. <br>
 d) O Sistema apresenta os detalhes da transação. <br>
 
-#### Gerenciar Categorias (CSU06)
+#### Gerenciar Categorias por Tipo (CSU05)
 
-Sumário: O Usuário realiza a gestão das categorias utilizadas para classificação das transações financeiras.
+Sumário: O Usuário realiza a gestão das categorias por tipo, podendo incluir, alterar, excluir e consultar categorias vinculadas às transações financeiras.
 
 Ator Primário: Usuário.
 
@@ -250,16 +229,16 @@ Pré-condições: O Usuário deve estar autenticado no sistema.
 
 Fluxo Principal:
 
-1) O Usuário requisita manutenção de categorias.  
+1) O Usuário requisita manutenção de categorias por tipo.  
 2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova categoria, alteração de uma categoria, exclusão de uma categoria e consulta de dados de categorias.  
 3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.  
-4) Se o Usuário desejar continuar com a gestão de categorias, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.  
+4) Se o Usuário desejar continuar com a gestão de categorias por tipo, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.  
 
 Fluxo Alternativo (3): Inclusão
 
-a) O Usuário requisita a inclusão de uma categoria. <br>
+a) O Usuário requisita a inclusão de uma categoria por tipo. <br>
 b) O Sistema apresenta um formulário para preenchimento dos dados da categoria. <br>
-c) O Usuário fornece os dados solicitados. <br>
+c) O Usuário fornece os dados solicitados, tais como nome da categoria e tipo associado. <br>
 d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova categoria e a lista de categorias cadastradas é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
 
 Fluxo Alternativo (3): Remoção
@@ -279,33 +258,9 @@ b) O Sistema apresenta uma lista de categorias cadastradas. <br>
 c) O Usuário seleciona a categoria. <br>
 d) O Sistema apresenta os detalhes da categoria. <br>
 
-#### Filtrar Transações (CSU07)
+#### Visualizar Dashboard Financeiro (CSU06)
 
-Sumário: O Usuário realiza a filtragem de transações por período, tipo e categoria.
-
-Ator Primário: Usuário.
-
-Ator Secundário: Não há.
-
-Pré-condições: O Usuário deve estar autenticado no sistema e possuir transações cadastradas.
-
-Fluxo Principal:
-
-1) O Usuário requisita a filtragem de transações.  
-2) O Sistema apresenta as opções de filtro disponíveis: período, tipo e categoria.  
-3) O Usuário informa um ou mais critérios de filtragem.  
-4) O Sistema processa os filtros informados.  
-5) O Sistema apresenta as transações que correspondem aos critérios definidos.  
-
-Fluxo Alternativo (5): Nenhum resultado encontrado
-
-a) O Sistema não localiza transações com base nos critérios informados. <br>
-b) O Sistema informa que não há resultados para o filtro aplicado. <br>
-c) O Usuário pode redefinir os critérios de busca. <br>
-
-#### Visualizar Dashboard Financeiro (CSU08)
-
-Sumário: O Usuário visualiza um painel com resumo de sua situação financeira, incluindo total de receitas, total de despesas e saldo do período.
+Sumário: O Usuário visualiza um painel com resumo de sua situação financeira, incluindo informações consolidadas sobre suas transações.
 
 Ator Primário: Usuário.
 
@@ -317,49 +272,9 @@ Fluxo Principal:
 
 1) O Usuário requisita a visualização do dashboard financeiro.  
 2) O Sistema recupera os dados financeiros do Usuário.  
-3) O Sistema calcula os totais de receitas e despesas do período.  
-4) O Sistema calcula o saldo atual.  
-5) O Sistema apresenta o painel financeiro com os dados resumidos.  
-
-#### Visualizar Saldo Atual (CSU09)
-
-Sumário: O Usuário visualiza o saldo atual calculado com base na diferença entre receitas e despesas registradas.
-
-Ator Primário: Usuário.
-
-Ator Secundário: Não há.
-
-Pré-condições: O Usuário deve estar autenticado no sistema.
-
-Fluxo Principal:
-
-1) O Usuário requisita a visualização do saldo atual.  
-2) O Sistema recupera as transações financeiras cadastradas.  
-3) O Sistema calcula a diferença entre receitas e despesas.  
-4) O Sistema apresenta o saldo atual ao Usuário.  
-
-#### Gerar Relatórios Visuais (CSU10)
-
-Sumário: O Usuário visualiza relatórios gráficos com a distribuição dos gastos por categoria e a evolução financeira ao longo do tempo.
-
-Ator Primário: Usuário.
-
-Ator Secundário: Não há.
-
-Pré-condições: O Usuário deve estar autenticado no sistema e possuir transações cadastradas.
-
-Fluxo Principal:
-
-1) O Usuário requisita a geração dos relatórios visuais.  
-2) O Sistema recupera os dados financeiros do Usuário.  
-3) O Sistema processa as informações por categoria e por período.  
-4) O Sistema gera gráficos para representação visual dos dados.  
-5) O Sistema apresenta os relatórios visuais ao Usuário.  
-
-Fluxo Alternativo (2): Ausência de dados
-
-a) O Sistema verifica que não há transações suficientes para geração dos relatórios. <br>
-b) O Sistema informa ao Usuário que não há dados para exibição dos gráficos. <br>
+3) O Sistema processa as informações de receitas e despesas registradas.  
+4) O Sistema organiza os dados em formato de painel gerencial.  
+5) O Sistema apresenta o dashboard financeiro ao Usuário.
 
 ### 3.4.3 Diagrama de Classes 
 
@@ -377,4 +292,4 @@ A Figura 2 mostra o diagrama de classes apresenta as principais entidades do sis
 | 1 | Usuário | Armazena os dados de cadastro do usuário (id, nome, e-mail, senha criptografada, data de cadastro). |
 | 2 | Transação | Representa uma movimentação financeira (id, descrição, valor, data, tipo [receita/despesa], id_categoria, id_usuário). |
 | 3 | Categoria | Representa uma categoria de classificação das transações (id, nome, id_usuário). |
-| 4 | Relatório | Entidade lógica responsável por agregar e calcular os dados financeiros para exibição no dashboard (total de receitas, total de despesas, saldo, distribuição por categoria). |
+
