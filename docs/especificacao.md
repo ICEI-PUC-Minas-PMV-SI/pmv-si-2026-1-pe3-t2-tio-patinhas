@@ -363,20 +363,18 @@ b) O Sistema informa ao Usuário que não há dados para exibição dos gráfico
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura 2 mostra o diagrama de classes apresenta as principais entidades do sistema e seus relacionamentos. O **Usuário** é a entidade central, possuindo diversas **Transações**, cada uma associada a uma **Categoria**. O sistema calcula automaticamente o **Saldo** com base nas transações registradas.
 
 #### Figura 2: Diagrama de Classes do Sistema.
- 
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
+
+![image](https://github.com/user-attachments/assets/ba066df2-ea31-4f66-be63-a116961d85f1)
 
 
 ### 3.4.4 Descrições das Classes 
 
 | # | Nome | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+|---|------|-----------|
+| 1 | Usuário | Armazena os dados de cadastro do usuário (id, nome, e-mail, senha criptografada, data de cadastro). |
+| 2 | Transação | Representa uma movimentação financeira (id, descrição, valor, data, tipo [receita/despesa], id_categoria, id_usuário). |
+| 3 | Categoria | Representa uma categoria de classificação das transações (id, nome, id_usuário). |
+| 4 | Relatório | Entidade lógica responsável por agregar e calcular os dados financeiros para exibição no dashboard (total de receitas, total de despesas, saldo, distribuição por categoria). |
