@@ -91,50 +91,275 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 Cada caso de uso deve ter a sua descrição representada nesta seção.
 
-#### Gerenciar Professor (CSU01)
+#### Cadastrar-se (CSU01)
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Sumário: O Usuário realiza seu cadastro no sistema informando nome, e-mail e senha para criação de sua conta de acesso.
 
-Ator Primário: Secretária.
+Ator Primário: Usuário.
 
-Ator Secundário: Coordenador.
+Ator Secundário: Não há.
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições: O Usuário não deve possuir cadastro prévio com o mesmo e-mail.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1) O Usuário requisita seu cadastro no sistema.  
+2) O Sistema apresenta o formulário de cadastro.  
+3) O Usuário informa nome, e-mail e senha.  
+4) O Sistema valida os dados informados.  
+5) O Sistema verifica se já existe cadastro com o e-mail informado.  
+6) Não existindo cadastro anterior, o Sistema registra o novo usuário.  
+7) O Sistema confirma a realização do cadastro.  
+
+Fluxo Alternativo (5): E-mail já cadastrado
+
+a) O Sistema identifica que o e-mail informado já está vinculado a uma conta. <br>
+b) O Sistema informa ao Usuário que já existe cadastro com esse e-mail. <br>
+c) O Sistema solicita a inserção de outro e-mail ou o cancelamento da operação. <br>
+
+#### Autenticar-se (CSU02)
+
+Sumário: O Usuário realiza login no sistema por meio de e-mail e senha para acessar sua área pessoal.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve possuir cadastro ativo no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita autenticação no sistema.  
+2) O Sistema apresenta os campos de e-mail e senha.  
+3) O Usuário informa suas credenciais de acesso.  
+4) O Sistema valida os dados informados.  
+5) O Sistema verifica se as credenciais correspondem a um usuário cadastrado.  
+6) O Sistema autentica o Usuário.  
+7) O Sistema concede acesso ao perfil do usuário autenticado.  
+
+Fluxo Alternativo (5): Credenciais inválidas
+
+a) O Sistema verifica que o e-mail ou a senha são inválidos. <br>
+b) O Sistema informa erro na autenticação. <br>
+c) O Sistema solicita nova tentativa de login. <br>
+
+#### Recuperar Senha (CSU03)
+
+Sumário: O Usuário solicita a recuperação de sua senha por meio do e-mail cadastrado no sistema.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Serviço de E-mail.
+
+Pré-condições: O Usuário deve possuir cadastro com e-mail válido no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita a recuperação de senha.  
+2) O Sistema solicita o e-mail cadastrado.  
+3) O Usuário informa o e-mail.  
+4) O Sistema verifica se o e-mail pertence a uma conta cadastrada.  
+5) O Sistema envia instruções de recuperação de senha para o e-mail informado.  
+6) O Usuário acessa o link de recuperação recebido.  
+7) O Sistema permite a redefinição da senha.  
+8) O Usuário informa a nova senha.  
+9) O Sistema atualiza a senha da conta.  
+
+Fluxo Alternativo (4): E-mail não encontrado
+
+a) O Sistema verifica que o e-mail informado não está cadastrado. <br>
+b) O Sistema informa que não foi encontrada conta vinculada ao e-mail informado. <br>
+c) O caso de uso é encerrado ou o Usuário pode tentar novamente. <br>
+
+#### Gerenciar Perfil (CSU04)
+
+Sumário: O Usuário realiza a gestão de seus dados pessoais e de sua senha de acesso.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita a gestão de seu perfil.  
+2) O Sistema apresenta os dados atualmente cadastrados.  
+3) O Usuário seleciona a operação desejada: alterar dados pessoais ou alterar senha.  
+4) O Usuário informa os novos dados.  
+5) O Sistema valida as informações fornecidas.  
+6) O Sistema atualiza os dados do perfil.  
+7) O Sistema confirma a atualização realizada.  
+
+Fluxo Alternativo (5): Dados inválidos
+
+a) O Sistema identifica inconsistências ou dados inválidos. <br>
+b) O Sistema informa o erro ao Usuário. <br>
+c) O Sistema solicita a correção dos dados. <br>
+
+#### Gerenciar Transações (CSU05)
+
+Sumário: O Usuário realiza a gestão de suas transações financeiras, podendo incluir, alterar, excluir e consultar receitas e despesas.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita manutenção de transações financeiras.  
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova transação, alteração de uma transação, exclusão de uma transação e consulta de dados de transações.  
+3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.  
+4) Se o Usuário desejar continuar com a gestão de transações, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.  
 
 Fluxo Alternativo (3): Inclusão
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+a) O Usuário requisita a inclusão de uma transação. <br>
+b) O Sistema apresenta um formulário para preenchimento dos dados da transação. <br>
+c) O Usuário fornece os dados solicitados, tais como descrição, valor, data, tipo e categoria. <br>
+d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova transação e a lista de transações cadastradas é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
 
 Fluxo Alternativo (3): Remoção
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+a) O Usuário seleciona uma transação e requisita ao Sistema que a remova. <br>
+b) Se a transação pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
 
 Fluxo Alternativo (3): Alteração
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
+a) O Usuário altera um ou mais dos detalhes da transação e requisita sua atualização. <br>
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados da transação; caso contrário, o erro é reportado. <br>
+
 Fluxo Alternativo (3): Consulta
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+a) O Usuário solicita a consulta sobre a lista de transações. <br>
+b) O Sistema apresenta uma lista de transações cadastradas. <br>
+c) O Usuário seleciona a transação. <br>
+d) O Sistema apresenta os detalhes da transação. <br>
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+#### Gerenciar Categorias (CSU06)
+
+Sumário: O Usuário realiza a gestão das categorias utilizadas para classificação das transações financeiras.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita manutenção de categorias.  
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova categoria, alteração de uma categoria, exclusão de uma categoria e consulta de dados de categorias.  
+3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.  
+4) Se o Usuário desejar continuar com a gestão de categorias, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.  
+
+Fluxo Alternativo (3): Inclusão
+
+a) O Usuário requisita a inclusão de uma categoria. <br>
+b) O Sistema apresenta um formulário para preenchimento dos dados da categoria. <br>
+c) O Usuário fornece os dados solicitados. <br>
+d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova categoria e a lista de categorias cadastradas é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+
+Fluxo Alternativo (3): Remoção
+
+a) O Usuário seleciona uma categoria e requisita ao Sistema que a remova. <br>
+b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+
+Fluxo Alternativo (3): Alteração
+
+a) O Usuário altera um ou mais dos detalhes da categoria e requisita sua atualização. <br>
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados da categoria; caso contrário, o erro é reportado. <br>
+
+Fluxo Alternativo (3): Consulta
+
+a) O Usuário solicita a consulta sobre a lista de categorias. <br>
+b) O Sistema apresenta uma lista de categorias cadastradas. <br>
+c) O Usuário seleciona a categoria. <br>
+d) O Sistema apresenta os detalhes da categoria. <br>
+
+#### Filtrar Transações (CSU07)
+
+Sumário: O Usuário realiza a filtragem de transações por período, tipo e categoria.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema e possuir transações cadastradas.
+
+Fluxo Principal:
+
+1) O Usuário requisita a filtragem de transações.  
+2) O Sistema apresenta as opções de filtro disponíveis: período, tipo e categoria.  
+3) O Usuário informa um ou mais critérios de filtragem.  
+4) O Sistema processa os filtros informados.  
+5) O Sistema apresenta as transações que correspondem aos critérios definidos.  
+
+Fluxo Alternativo (5): Nenhum resultado encontrado
+
+a) O Sistema não localiza transações com base nos critérios informados. <br>
+b) O Sistema informa que não há resultados para o filtro aplicado. <br>
+c) O Usuário pode redefinir os critérios de busca. <br>
+
+#### Visualizar Dashboard Financeiro (CSU08)
+
+Sumário: O Usuário visualiza um painel com resumo de sua situação financeira, incluindo total de receitas, total de despesas e saldo do período.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita a visualização do dashboard financeiro.  
+2) O Sistema recupera os dados financeiros do Usuário.  
+3) O Sistema calcula os totais de receitas e despesas do período.  
+4) O Sistema calcula o saldo atual.  
+5) O Sistema apresenta o painel financeiro com os dados resumidos.  
+
+#### Visualizar Saldo Atual (CSU09)
+
+Sumário: O Usuário visualiza o saldo atual calculado com base na diferença entre receitas e despesas registradas.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita a visualização do saldo atual.  
+2) O Sistema recupera as transações financeiras cadastradas.  
+3) O Sistema calcula a diferença entre receitas e despesas.  
+4) O Sistema apresenta o saldo atual ao Usuário.  
+
+#### Gerar Relatórios Visuais (CSU10)
+
+Sumário: O Usuário visualiza relatórios gráficos com a distribuição dos gastos por categoria e a evolução financeira ao longo do tempo.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema e possuir transações cadastradas.
+
+Fluxo Principal:
+
+1) O Usuário requisita a geração dos relatórios visuais.  
+2) O Sistema recupera os dados financeiros do Usuário.  
+3) O Sistema processa as informações por categoria e por período.  
+4) O Sistema gera gráficos para representação visual dos dados.  
+5) O Sistema apresenta os relatórios visuais ao Usuário.  
+
+Fluxo Alternativo (2): Ausência de dados
+
+a) O Sistema verifica que não há transações suficientes para geração dos relatórios. <br>
+b) O Sistema informa ao Usuário que não há dados para exibição dos gráficos. <br>
 
 ### 3.4.3 Diagrama de Classes 
 
