@@ -46,17 +46,17 @@ O sistema **Tio Patinhas** não contempla:
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição | Prioridade |
 |--------|--------------------------------------|-----------|------------|
-| RF01 | Cadastrar Usuário | O sistema deve permitir que novos usuários se registrem informando nome, e-mail e senha. | Essencial |
-| RF02 | Autenticar Usuário | O sistema deve permitir login por e-mail e senha, garantindo acesso apenas ao perfil do usuário autenticado. | Essencial |
-| RF03 | Gerenciar Transações | O sistema deve permitir inclusão, alteração, exclusão e consulta de transações financeiras (receitas e despesas). | Essencial |
+| RF01 | Usuário se Cadastra | O sistema deve permitir que novos usuários se registrem informando nome, e-mail e senha. | Essencial |
+| RF02 | Usuário se Autentica | O sistema deve permitir login por e-mail e senha, garantindo acesso apenas ao perfil do usuário autenticado. | Essencial |
+| RF03 | Usuário Gerencia as Transações | O sistema deve permitir inclusão, alteração, exclusão e consulta de transações financeiras (receitas e despesas). | Essencial |
 | RF04 | Classificar Transações por Tipo | O sistema deve permitir que cada transação seja classificada como **receita** ou **despesa**. | Essencial |
-| RF05 | Gerenciar Categorias | O sistema deve permitir que o usuário crie, edite, exclua e consulte categorias para classificação das transações (ex.: alimentação, transporte, lazer). | Essencial |
-| RF06 | Exibir Saldo Atual | O sistema deve calcular e exibir o saldo atual do usuário com base na diferença entre receitas e despesas registradas. | Essencial |
-| RF07 | Exibir Dashboard Financeiro | O sistema deve apresentar um painel com resumo financeiro, incluindo total de receitas, total de despesas e saldo do período. | Essencial |
-| RF08 | Gerar Relatórios Visuais | O sistema deve exibir gráficos (ex.: pizza ou barras) com a distribuição de gastos por categoria e a evolução financeira ao longo do tempo. | Essencial |
-| RF09 | Filtrar Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
-| RF10 | Recuperar Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
-| RF11 | Editar Perfil do Usuário | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
+| RF05 | Usuário Gerencia as Categorias | O sistema deve permitir que o usuário crie, edite, exclua e consulte categorias para classificação das transações (ex.: alimentação, transporte, lazer). | Essencial |
+| RF06 | Usuário Visualiza o Saldo Atual | O sistema deve calcular e exibir o saldo atual do usuário com base na diferença entre receitas e despesas registradas. | Essencial |
+| RF07 | Usuário Visualiza o Dashboard Financeiro | O sistema deve apresentar um painel com resumo financeiro, incluindo total de receitas, total de despesas e saldo do período. | Essencial |
+| RF08 | Usuário Gera os Relatórios Visuais | O sistema deve exibir gráficos (ex.: pizza ou barras) com a distribuição de gastos por categoria e a evolução financeira ao longo do tempo. | Essencial |
+| RF09 | Usuário Filtra as Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
+| RF10 | Usuário Recupera a Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
+| RF11 | Usuário Gerencia o Perfil | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
 
 
 ### 3.3.2 Requisitos Não Funcionais
