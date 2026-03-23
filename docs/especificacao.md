@@ -49,7 +49,7 @@ O sistema **Tio Patinhas** não contempla:
 | RF01 | Usuário se Cadastra | O sistema deve permitir que novos usuários se registrem informando nome, e-mail e senha. | Essencial |
 | RF02 | Usuário se Autentica | O sistema deve permitir login por e-mail e senha, garantindo acesso apenas ao perfil do usuário autenticado. | Essencial |
 | RF03 | Usuário Gerencia as Transações | O sistema deve permitir inclusão, alteração, exclusão e consulta de transações financeiras (receitas e despesas). | Essencial |
-| RF04 | Classificar Transações por Tipo | O sistema deve permitir que cada transação seja classificada como **receita** ou **despesa**. | Essencial |
+| RF04 | Usuário Classifica as Transações por Tipo | O sistema deve permitir que cada transação seja classificada como **receita** ou **despesa**. | Essencial |
 | RF05 | Usuário Gerencia as Categorias | O sistema deve permitir que o usuário crie, edite, exclua e consulte categorias para classificação das transações (ex.: alimentação, transporte, lazer). | Essencial |
 | RF06 | Usuário Visualiza o Saldo Atual | O sistema deve calcular e exibir o saldo atual do usuário com base na diferença entre receitas e despesas registradas. | Essencial |
 | RF07 | Usuário Visualiza o Dashboard Financeiro | O sistema deve apresentar um painel com resumo financeiro, incluindo total de receitas, total de despesas e saldo do período. | Essencial |
