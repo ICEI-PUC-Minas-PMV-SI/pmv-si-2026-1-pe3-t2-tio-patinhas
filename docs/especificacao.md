@@ -282,7 +282,7 @@ A Figura 2 mostra o diagrama de classes apresenta as principais entidades do sis
 
 #### Figura 2: Diagrama de Classes do Sistema.
 
-![image](https://github.com/user-attachments/assets/ba066df2-ea31-4f66-be63-a116961d85f1)
+![image](https://github.com/user-attachments/assets/f35d9263-51f1-4a1e-b44c-348f59ca111e)
 
 
 ### 3.4.4 Descrições das Classes 
