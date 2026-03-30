@@ -23,7 +23,7 @@ No campo do desenvolvimento de sistemas, pesquisadores têm construído protóti
 
 O que as pesquisas mais recentes mostram, de forma bastante consistente, é que saber lidar com dinheiro ainda é um desafio real para boa parte da população, especialmente entre jovens. Uma pesquisa do CNDL e SPC Brasil revelou que 47% dos jovens da Geração Z não realizam nenhum tipo de controle das próprias finanças pessoais, sendo as principais justificativas a falta de hábito, de disciplina ou simplesmente não saber por onde começar. 
 
-Outros estudos aprofundam esse cenário no ambiente universitário. Uma pesquisa com estudantes de uma instituição privada de Goiás constatou que, embora a maioria dos alunos tenha conhecimento razoável sobre finanças, poucos estão satisfeitos com sua própria situação financeira, e cerca de 52% acreditam que ainda têm muito a melhorar. Inupcontabil Em linha com isso, outro estudo realizado em 2024 identificou que 45% dos estudantes universitários reconhecem que o endividamento atual compromete diretamente sua capacidade de poupar para o futuro, tendo o cartão de crédito como principal fonte de dívidas. 
+Outros estudos aprofundam esse cenário no ambiente universitário. Uma pesquisa com estudantes de uma instituição privada de Goiás constatou que, embora a maioria dos alunos tenha conhecimento razoável sobre finanças, poucos estão satisfeitos com sua própria situação financeira, e cerca de 52% acreditam que ainda têm muito a melhorar. Em linha com isso, outro estudo realizado em 2024 identificou que 45% dos estudantes universitários reconhecem que o endividamento atual compromete diretamente sua capacidade de poupar para o futuro, tendo o cartão de crédito como principal fonte de dívidas. 
 
 No que diz respeito ao papel da tecnologia, os resultados são encorajadores. Pesquisadores têm destacado a importância da inclusão da educação financeira em escolas e universidades como ferramenta essencial para reduzir o impacto da falta de conhecimento financeiro na saúde mental e no bem-estar dos indivíduos. Ferramentas digitais bem projetadas aparecem, nesses estudos, como um dos caminhos mais promissores para tornar esse aprendizado mais acessível e prático, especialmente para um público jovem e já familiarizado com a tecnologia.
 
@@ -39,7 +39,7 @@ O "Tio Patinhas" se posiciona dentro desse debate optando pela simplicidade: uma
 
 #### 5. Quais aspectos carecem de maior abordagem?
 
-Apesar da existência de diversas soluções de gestão financeira pessoal, ainda se observam limitações relacionadas à usabilidade, à simplicidade da interface e ao suporte à educação financeira.       Muitas aplicações apresentam excesso de funcionalidades ou complexidade desnecessária, dificultando o uso por pessoas com menor conhecimento técnico. Além disso, há carência de recursos que          auxiliem   na interpretação clara das informações financeiras, evidenciando a necessidade de sistemas mais acessíveis, intuitivos e centrados no usuário.
+Apesar da existência de diversas soluções de gestão financeira pessoal, ainda se observam limitações relacionadas à usabilidade, à simplicidade da interface e ao suporte à educação financeira.       Muitas aplicações apresentam excesso de funcionalidades ou complexidade desnecessária, dificultando o uso por pessoas com menor conhecimento técnico. Além disso, há carência de recursos que          auxiliem na interpretação clara das informações financeiras, evidenciando a necessidade de sistemas mais acessíveis, intuitivos e centrados no usuário.
 
 
 # Referências
