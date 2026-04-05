@@ -6,9 +6,7 @@ Descrever e especificar as necessidades dos usuários que devem ser atendidas pe
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-
 O produto será denominado **Tio Patinhas – Sistema de Gestão Financeira Pessoal**. A aplicação é composta pelos seguintes módulos principais:
-
 - **Módulo de Autenticação:** responsável pelo cadastro e login de usuários.
 - **Módulo de Transações:** permite o registro, edição, exclusão e consulta de receitas e despesas.
 - **Módulo de Categorias:** permite a criação e gerenciamento de categorias para classificação das movimentações financeiras.
@@ -19,7 +17,6 @@ Oferecer ao usuário uma ferramenta web simples, intuitiva e acessível para o r
 
 ### 3.2.3 Limites do produto
 O sistema **Tio Patinhas** não contempla:
-
 - Integração direta com contas bancárias ou instituições financeiras.
 - Funcionalidades de pagamento, transferências bancárias ou operações financeiras reais.
 - Gestão financeira empresarial ou corporativa.
@@ -52,23 +49,22 @@ O sistema **Tio Patinhas** não contempla:
 | RF04 | Usuário Classifica as Transações por Tipo | O sistema deve permitir que cada transação seja classificada como **receita** ou **despesa**. | Essencial |
 | RF05 | Usuário Gerencia as Categorias | O sistema deve permitir que o usuário crie, edite, exclua e consulte categorias para classificação das transações (ex.: alimentação, transporte, lazer). | Essencial |
 | RF06 | Usuário Visualiza o Saldo Atual | O sistema deve calcular e exibir o saldo atual do usuário com base na diferença entre receitas e despesas registradas. | Essencial |
-| RF07 | Usuário Visualiza o Dashboard Financeiro | O sistema deve apresentar um painel com resumo financeiro, incluindo total de receitas, total de despesas e saldo do período. | Essencial |
-| RF08 | Usuário Gera os Relatórios Visuais | O sistema deve exibir gráficos (ex.: pizza ou barras) com a distribuição de gastos por categoria e a evolução financeira ao longo do tempo. | Essencial |
-| RF09 | Usuário Filtra as Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
-| RF10 | Usuário Recupera a Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
-| RF11 | Usuário Gerencia o Perfil | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
+| RF07 | Usuário Visualiza o Dashboard | O sistema deve exibir um resumo financeiro do **mês vigente**, contendo: saldo total acumulado, somatório de receitas e despesas do mês e um indicador de percentual de gastos. | Essencial |
+| RF08 | Usuário Filtra as Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
+| RF09 | Usuário Recupera a Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
+| RF110 | Usuário Gerencia o Perfil | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
 
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------|--------------------------------------|
-| RNF01 | **Usabilidade:** A interface deve ser simples, intuitiva e responsiva, adaptando-se a diferentes tamanhos de tela (desktop e dispositivos móveis). |
+| RNF01 | **Usabilidade (Responsividade)** A interface deve ser adaptável a: **Mobile** (min 320px), **Tablet** (min 768px) e **Desktop** (min 1024px), sem barras de rolagem horizontal. |
 | RNF02 | **Desempenho:** O sistema deve responder às interações do usuário em até 3 segundos em condições normais de uso. |
-| RNF03 | **Segurança:** As senhas dos usuários devem ser armazenadas com criptografia (hash). O acesso aos dados deve ser restrito ao usuário autenticado. |
-| RNF04 | **Compatibilidade:** A aplicação deve funcionar nos principais navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edge e Safari). |
-| RNF05 | **Disponibilidade:** O sistema deve estar disponível para acesso via navegador web, sem necessidade de instalação de software adicional. |
-| RNF06 | **Manutenibilidade:** O código deve ser organizado de forma modular, seguindo boas práticas de desenvolvimento, facilitando futuras manutenções e evoluções. |
+| RNF03 | **Segurança:** As senhas devem ser armazenadas com hashing **BCrypt** ou **Argon2**. O acesso aos dados deve ser restrito ao usuário autenticado. |
+| RNF04 | **Compatibilidade** Suporte total às duas últimas versões estáveis de Chrome, Firefox, Safari e Microsoft Edge. |
+| RNF05 | **Disponibilidade** Acesso via navegador sem necessidade de plugins ou software adicional. |
+| RNF06 | **Manutenibilidade** Código modular seguindo padrões de arquitetura (ex.: Clean Architecture ou MVC). |
 | RNF07 | **Acessibilidade:** A interface deve adotar boas práticas de acessibilidade web (contraste adequado, textos descritivos em imagens e navegação por teclado). |
 | RNF08 | **Persistência de dados:** Os dados dos usuários devem ser armazenados em banco de dados relacional, garantindo integridade e consistência das informações. |
 
@@ -76,7 +72,7 @@ O sistema **Tio Patinhas** não contempla:
 
 | Ator | Descrição |
 |------|-----------|
-| Usuário | Pessoa física que utiliza o sistema para gerenciar suas finanças pessoais. Possui acesso completo às suas próprias transações, categorias, relatórios e configurações de perfil. É o único ator do sistema, pois a aplicação é de uso individual. |
+| Usuário | Pessoa física que utiliza o sistema para gerenciar suas finanças pessoais. Possui acesso completo às suas próprias transações e configurações. |
 
 ## 3.4 Modelagem do Sistema
 
