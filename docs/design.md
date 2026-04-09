@@ -3,7 +3,7 @@
 ## 4.1 Personas
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização de um template do Canva: https://www.canva.com/pt_br/modelos/s/persona/
 
-![image](./assets/img/Persona-Lucas.png)
+![image](./assets/img/Persona-Joao.png)
 ![Persona Corrigida](https://github.com/user-attachments/assets/474dbfa2-465c-4618-afbf-11a95fdd0555)
 
 
