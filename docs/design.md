@@ -31,6 +31,90 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
 
+---
+
+### Tela de Login – Tio Patinhas
+
+![Tela de Login - Tio Patinhas](/docs/assets/img/Telas/01-Login.png)
+
+### Objetivo da Tela  
+Permitir que o usuário acesse sua conta no sistema de controle financeiro por meio da inserção de suas credenciais (e-mail e chave mestra). A tela funciona como ponto de entrada seguro, garantindo que apenas usuários autenticados tenham acesso às funcionalidades do sistema.
+
+
+### Princípios Gestálticos
+
+- **Proximidade:** Os campos de entrada (e-mail e chave mestra) e o botão de ação estão agrupados em uma única área central, indicando claramente que fazem parte do mesmo fluxo de interação.
+
+- **Semelhança:** Os campos de entrada compartilham o mesmo estilo visual (cores, bordas arredondadas e tipografia), reforçando a consistência e facilitando o reconhecimento dos elementos interativos.
+
+- **Continuidade:** A organização vertical dos elementos conduz naturalmente o olhar do usuário do topo (identidade visual) até o botão principal de ação, favorecendo a navegação intuitiva.
+
+- **Figura-fundo:** O contraste entre o fundo escuro do formulário e o fundo claro da página destaca a área de interação principal, direcionando a atenção do usuário.
+
+- **Fechamento:** O contorno do card central cria uma unidade visual bem definida, permitindo que o usuário perceba o formulário como um bloco coeso e organizado.
+
+
+### Regras de Ouro
+
+- **Consistência:** A interface mantém padronização visual entre campos, botões e tipografia, criando uma experiência previsível e familiar.
+
+- **Feedback:** O botão “Destravar Cofre” apresenta destaque visual (cor contrastante), indicando claramente sua função como ação principal.
+
+- **Prevenção de erros:** O uso de campo específico para senha (chave mestra) com ocultação de caracteres contribui para a segurança e evita exposição acidental de dados sensíveis.
+
+- **Reconhecimento em vez de memorização:** O uso de rótulos claros (“E-mail” e “Chave Mestra”) reduz a necessidade de o usuário lembrar informações adicionais.
+
+- **Controle do usuário:** A presença de uma opção para novos usuários (“Forje seu cofre”) oferece liberdade de navegação e acesso a cadastro.
+
+
+### Recomendações Ergonômicas
+
+- **Clareza visual:** O alto contraste entre texto, campos e fundo melhora a legibilidade, especialmente em ambientes com diferentes condições de iluminação.
+
+- **Hierarquia da informação:** A identidade visual no topo, seguida pelos campos e pelo botão de ação, estabelece uma hierarquia clara de uso.
+
+- **Redução da carga cognitiva:** A interface apresenta apenas os elementos essenciais para login, evitando distrações e simplificando a tarefa.
+
+- **Acessibilidade:** O tamanho dos campos e do botão facilita a interação, inclusive em dispositivos móveis.
+
+- **Compatibilidade com o usuário:** A linguagem utilizada (“Destravar cofre” e “Chave mestra”) reforça a metáfora do sistema financeiro, tornando a experiência mais intuitiva e alinhada ao contexto do produto.
+
+---
+
+### Tela de Cadastro – Tio Patinhas
+
+![Tela de Cadastro - Tio Patinhas](/docs/assets/img/Telas/02-Cadastro.png)
+
+---
+
+### Tela do Painel de Controle
+
+![Tela do Painel de Controle](/docs/assets/img/Telas/03-Painel.png)
+
+---
+
+### Tela de Transações
+
+![Tela de Transacoes](/docs/assets/img/Telas/04-Transacoes.png)
+
+---
+
+### Telade Investimentos
+
+![Tela de Investimentos](/docs/assets/img/Telas/05-Investimentos.png)
+
+---
+
+### Tela de Metas
+
+![Tela de Metas](/docs/assets/img/Telas/06-Metas.png)
+
+---
+
+### Tela de Perfil e Segurança
+
+![Tela de Perfil e Segurança](/docs/assets/img/Telas/07-Perfil.png)
+
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
