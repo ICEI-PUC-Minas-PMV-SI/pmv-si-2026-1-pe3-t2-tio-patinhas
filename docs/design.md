@@ -85,7 +85,47 @@ Permitir que o usuário acesse sua conta no sistema de controle financeiro por m
 
 ![Tela de Cadastro - Tio Patinhas](/docs/assets/img/Telas/02-Cadastro.png)
 
----
+### Objetivo da Tela  
+Permitir que novos usuários realizem o cadastro no sistema de controle financeiro por meio da inserção de seus dados (nome completo, e-mail e chave mestra), a tela funciona como porta de entrada para novos usuários, garantindo um processo simples, seguro e orientado.
+
+
+### Princípios Gestálticos
+
+- **Proximidade:** Os campos de entrada (nome completo, e-mail e chave mestra) e o botão de ação estão agrupados em uma única área central, indicando claramente que fazem parte do mesmo fluxo de cadastro.
+
+- **Semelhança:** Os campos de entrada compartilham o mesmo estilo visual (cores, bordas arredondadas e tipografia), reforçando a consistência e facilitando o reconhecimento dos elementos interativos.
+
+- **Continuidade:** A organização vertical dos elementos conduz naturalmente o olhar do usuário do topo (título e identidade visual) até o botão principal de ação, favorecendo a navegação intuitiva.
+
+- **Figura-fundo:** O contraste entre o fundo escuro do formulário e o fundo claro da página destaca a área de interação principal, direcionando a atenção do usuário.
+
+- **Fechamento:** O contorno do card central cria uma unidade visual bem definida, permitindo que o usuário perceba o formulário como um bloco coeso e organizado.
+
+
+### Regras de Ouro
+
+- **Consistência:** A interface mantém padronização visual entre campos, botões e tipografia, criando uma experiência previsível e familiar, alinhada à tela de login.
+
+- **Feedback:** O botão “Criar Meu Cofre” apresenta destaque visual (cor contrastante), indicando claramente sua função como ação principal.
+
+- **Prevenção de erros:** O uso de campo específico para senha (chave mestra) com ocultação de caracteres contribui para a segurança e evita exposição acidental de dados sensíveis.
+
+- **Reconhecimento em vez de memorização:** O uso de rótulos claros (“Nome Completo”, “E-mail” e “Chave Mestra”) reduz a necessidade de o usuário lembrar informações adicionais.
+
+- **Controle do usuário:** A presença de uma opção para usuários já cadastrados (“Acesse aqui”) oferece liberdade de navegação e retorno à tela de login.
+
+
+### Recomendações Ergonômicas
+
+- **Clareza visual:** O alto contraste entre texto, campos e fundo melhora a legibilidade, especialmente em ambientes com diferentes condições de iluminação.
+
+- **Hierarquia da informação:** O título e subtítulo no topo, seguidos pelos campos e pelo botão de ação, estabelecem uma hierarquia clara de uso.
+
+- **Redução da carga cognitiva:** A interface apresenta apenas os elementos essenciais para cadastro, evitando distrações e simplificando a tarefa.
+
+- **Acessibilidade:** O tamanho dos campos e do botão facilita a interação, inclusive em dispositivos móveis.
+
+- **Compatibilidade com o usuário:** A linguagem utilizada (“Criar cofre” e “Chave mestra”) reforça a metáfora do sistema financeiro, tornando a experiência mais intuitiva e alinhada ao contexto do produto.
 
 ### Tela do Painel de Controle
 
