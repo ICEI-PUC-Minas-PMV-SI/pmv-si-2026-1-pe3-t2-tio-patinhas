@@ -131,7 +131,49 @@ Permitir que novos usuários realizem o cadastro no sistema de controle financei
 
 ![Tela do Painel de Controle](/docs/assets/img/Telas/03-Painel.png)
 
----
+### Objetivo da Tela  
+Apresentar ao usuário uma visão geral do seu patrimônio financeiro, reunindo informações consolidadas como saldo total, receitas, despesas, investimentos e evolução ao longo do tempo. A tela funciona como painel principal do sistema, permitindo monitoramento rápido e apoio à tomada de decisões.
+
+
+### Princípios Gestálticos
+
+- **Proximidade:** Os indicadores financeiros estão organizados em blocos (cards) agrupados por contexto, facilitando a compreensão das informações relacionadas.
+
+- **Semelhança:** Os cards seguem um padrão visual consistente (cores, tipografia e estrutura), reforçando a unidade e facilitando a leitura dos dados.
+
+- **Continuidade:** A disposição dos elementos conduz o olhar da esquerda para a direita e de cima para baixo (menu lateral → resumo → gráficos → metas), criando um fluxo natural de navegação.
+
+- **Figura-fundo:** O contraste entre o fundo claro da interface e os cards destacados direciona a atenção do usuário para as informações principais.
+
+- **Fechamento:** Cada seção (resumo, gráfico, categorias e metas) é delimitada visualmente em containers, permitindo que o usuário perceba claramente os blocos de informação.
+
+
+### Regras de Ouro
+
+- **Consistência:** A interface mantém padronização visual entre cards, botões, gráficos e menu lateral, criando uma experiência uniforme em todo o sistema.
+
+- **Feedback:** Elementos interativos como o botão “+ Nova Transação” possuem destaque visual, indicando claramente sua função e incentivando a ação.
+
+- **Prevenção de erros:** A organização clara das informações evita interpretações equivocadas, reduzindo o risco de decisões baseadas em dados confusos.
+
+- **Reconhecimento em vez de memorização:** Informações importantes são exibidas diretamente na tela (saldo, receitas, despesas, categorias), eliminando a necessidade de o usuário lembrar dados.
+
+- **Controle do usuário:** O menu lateral permite acesso rápido às principais funcionalidades (Dashboard, Transações, Investimentos, Metas), garantindo liberdade de navegação.
+
+
+### Recomendações Ergonômicas
+
+- **Clareza visual / Legibilidade:** O uso de cores contrastantes, tipografia adequada e espaçamento entre elementos facilita a leitura e interpretação rápida das informações.
+
+- **Hierarquia da informação:** Os dados mais importantes (saldo total e indicadores principais) estão em destaque no topo, seguidos por gráficos e informações complementares.
+
+- **Minimização da carga de trabalho do usuário:** As informações são apresentadas de forma resumida e organizada, permitindo que o usuário compreenda sua situação financeira sem esforço excessivo.
+
+- **Redução da carga cognitiva:** A divisão das informações em cards e gráficos evita sobrecarga visual e facilita o processamento das informações.
+
+- **Acessibilidade:** Elementos bem espaçados, botões visíveis e gráficos claros facilitam a interação em diferentes dispositivos.
+
+- **Compatibilidade com o usuário:** A linguagem utilizada (“Patrimônio”, “Receitas”, “Despesas”, “Metas”) está alinhada ao contexto financeiro, tornando a interface intuitiva e de fácil entendimento.
 
 ### Tela de Transações
 
