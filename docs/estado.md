@@ -38,4 +38,6 @@ Apesar dos avanços observados, ainda há lacunas importantes no desenvolvimento
 
 Outro aspecto que ainda demanda maior atenção é a integração entre controle financeiro e educação financeira. As evidências indicam que não basta disponibilizar tecnologia: é necessário que ela contribua para o entendimento das informações, para a formação de hábitos e para a tomada de decisões mais conscientes. Além disso, o próprio cenário de transformação digital dos serviços financeiros exige atenção a fatores como confiança, clareza das informações e adaptação das soluções às necessidades reais dos usuários (LUSARDI; MITCHELL, 2023; OECD, 2023; PEREIRA, 2026; INUP ASSESSORIA CONTÁBIL, 2024).
 
+# Referências
+
 [Referências](/docs/referencias.md)
