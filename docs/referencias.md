@@ -14,7 +14,7 @@ Artigo (sem autor indicado). Finanças Pessoais e Desafios Atuais: Uma Pesquisa 
 
 CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
 
-CNDL; SPC BRASIL. Pesquisa: o perfil financeiro dos jovens da Geração Z. Disponível em: https://cndl.org.br. Acesso em: 17 mar. 2026.
+CNDL; SPC BRASIL. Pesquisa: o perfil financeiro dos jovens da Geração Z. Disponível em: https://cndl.org.br. Acesso em: 22 mar. 2026.
 
 INUP ASSESSORIA CONTÁBIL. Tendências financeiras de 2024: o impacto das novas tecnologias. 2024. Disponível em: https://inupcontabil.com.br. Acesso em: 17 mar. 2026.
 
@@ -38,5 +38,5 @@ SANTOS, L. V. dos; ALTOÉ, S. M. L. Finanças pessoais: um estudo envolvendo os 
 
 SERASA. Mapa da Inadimplência e Negociação de Dívidas no Brasil. São Paulo: Serasa, 2024. Disponível em: https://www.serasa.com.br. Acesso em: 17 mar. 2026.
 
-VENÂNCIO, A. et al. Tecnologia e Planejamento Financeiro Pessoal: uma análise da percepção de alunos do curso de graduação em ciências contábeis. Revista Eletrônica de Ciências Sociais Aplicadas, ISSN 2176-5766. Disponível em: https://revista.fisul.edu.br. Acesso em: 17 mar. 2026.
+VENÂNCIO, A. et al. Tecnologia e Planejamento Financeiro Pessoal: uma análise da percepção de alunos do curso de graduação em ciências contábeis. Revista Eletrônica de Ciências Sociais Aplicadas, 2024. Disponível em: https://revista.fisul.edu.br. Acesso em: 22 mar. 2026.
 
