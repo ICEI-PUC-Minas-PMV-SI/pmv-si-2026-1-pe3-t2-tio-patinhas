@@ -252,7 +252,44 @@ Permitir que o usuário acompanhe e gerencie seus investimentos, registrando apo
 
 ![Tela de Metas](/docs/assets/img/Telas/06-Metas.png)
 
----
+### Objetivo da Tela  
+Permitir que o usuário defina, acompanhe e gerencie suas metas financeiras de curto e longo prazo, visualizando o progresso de cada objetivo e facilitando o planejamento financeiro.
+
+### Princípios Gestálticos
+
+- **Proximidade:** Os campos de criação de metas estão agrupados em um único formulário, enquanto as metas cadastradas são exibidas em cards separados por categoria (curto e longo prazo), indicando diferentes contextos.
+
+- **Semelhança:** Os cards de metas seguem o mesmo padrão visual (estrutura, tipografia e barras de progresso), facilitando o reconhecimento e comparação entre objetivos.
+
+- **Continuidade:** A organização da tela conduz o usuário do cadastro da meta (topo), para as metas de curto prazo e depois para as de longo prazo, criando um fluxo natural de leitura.
+
+- **Figura-fundo:** Os cards das metas se destacam do fundo da interface, enquanto a barra de progresso utiliza contraste para evidenciar o avanço em relação ao objetivo.
+
+- **Fechamento:** Cada meta é apresentada dentro de um card bem definido, permitindo que o usuário perceba cada objetivo como uma unidade independente.
+
+### Regras de Ouro
+
+- **Consistência:** A interface mantém o padrão visual das demais telas do sistema, garantindo uma experiência uniforme e previsível.
+
+- **Feedback:** A barra de progresso e os percentuais fornecem retorno imediato sobre o avanço da meta. O botão “Adicionar Meta” destaca claramente a ação principal.
+
+- **Prevenção de erros:** O uso de campos estruturados (valores numéricos, datas e seleção de tipo) reduz inconsistências no cadastro das metas.
+
+- **Reconhecimento em vez de memorização:** Rótulos claros como “Valor Atual”, “Valor Alvo” e “Prazo” ajudam o usuário a entender rapidamente as informações necessárias.
+
+- **Controle do usuário:** A presença de ações como editar e excluir metas permite que o usuário tenha total controle sobre seus objetivos.
+
+### Recomendações Ergonômicas
+
+- **Clareza visual:** A separação entre formulário e listagem de metas, além da divisão por categorias (curto e longo prazo), facilita a leitura e organização das informações.
+
+- **Hierarquia da informação:** O fluxo começa com a criação da meta, seguido pela visualização das metas em andamento, priorizando as de curto prazo.
+
+- **Redução da carga cognitiva:** A interface apresenta apenas os dados essenciais para acompanhamento das metas, evitando excesso de informações.
+
+- **Acessibilidade:** O uso de barras de progresso, espaçamento adequado e tipografia legível melhora a usabilidade em diferentes dispositivos.
+
+- **Compatibilidade com o usuário:** Termos como “Meta”, “Prazo”, “Valor Atual” e “Valor Alvo” são familiares no contexto financeiro, tornando a interface intuitiva.
 
 ### Tela de Perfil e Segurança
 
