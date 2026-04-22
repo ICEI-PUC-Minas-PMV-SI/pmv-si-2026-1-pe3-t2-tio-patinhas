@@ -197,6 +197,83 @@ Apresentar ao usuário uma visão geral do seu patrimônio financeiro, reunindo 
 
 ![Tela de Perfil e Segurança](/docs/assets/img/Telas/07-Perfil.png)
 
+## Objetivo da Tela
+
+Permitir que o usuário gerencie as informações pessoais da sua conta e as credenciais de segurança do sistema de controle financeiro.  
+A tela funciona como o painel central para alteração de dados gerais, como nome e e-mail, além da atualização da chave mestra de acesso, garantindo que o titular da conta mantenha seu perfil atualizado e a segurança da sua **Caixa-Forte** em dia.
+
+## Princípios Gestálticos Aplicados
+
+### Proximidade
+Os campos e botões estão agrupados logicamente em seções distintas, como **Informações Gerais** e **Alterar Chave Mestra**.  
+Essa organização permite ao usuário compreender com clareza quais elementos pertencem a cada ação dentro da tela.
+
+### Semelhança
+Os campos de entrada seguem o mesmo padrão visual, com bordas arredondadas, fundo claro e tipografia consistente.  
+Essa uniformidade facilita o reconhecimento dos elementos interativos e fortalece a identidade visual da interface.
+
+### Continuidade
+A disposição vertical dos componentes conduz o olhar do usuário de forma natural, iniciando no título da página, passando pelas informações do perfil e chegando às áreas de edição e segurança.  
+Isso contribui para uma navegação intuitiva e fluida.
+
+### Figura-fundo
+O contraste entre o fundo claro da página, os cards brancos e a barra lateral escura destaca as áreas principais de interação.  
+Esse contraste ajuda o usuário a identificar rapidamente onde estão as informações e ações mais importantes.
+
+## Regras de Ouro Aplicadas
+
+### Consistência
+A interface mantém padronização visual entre campos, botões, ícones, espaçamentos e tipografia.  
+Além disso, a paleta de cores institucional é preservada em toda a tela, promovendo unidade visual e previsibilidade.
+
+### Feedback
+Os botões de ação, como **Salvar Alterações** e **Atualizar Segurança**, possuem destaque visual por meio de cor contrastante e ícones, sinalizando claramente sua função.  
+A navegação lateral também fornece feedback de localização ao destacar a opção ativa.
+
+### Prevenção de erros
+A separação entre atualização de dados gerais e alteração da chave mestra reduz a chance de ações equivocadas.  
+Além disso, a exigência de confirmação da nova chave contribui para evitar erros de digitação e reforça a segurança da operação.
+
+### Reconhecimento em vez de memorização
+Os rótulos dos campos são claros e objetivos, como **Nome de Exibição**, **E-mail (Recuperação e Login)**, **Chave Mestra Atual** e **Confirmar Nova Chave**.  
+Isso reduz a necessidade de memorização e facilita o preenchimento correto das informações.
+
+### Controle do usuário
+A interface permite que o usuário decida quais informações deseja atualizar, sem obrigá-lo a alterar tudo de uma só vez.  
+Além disso, o menu lateral garante liberdade de navegação entre as demais áreas do sistema.
+
+## Recomendações Ergonômicas
+
+### Clareza visual
+A tela apresenta boa legibilidade por meio do contraste entre texto, fundo e elementos interativos.  
+Os títulos, subtítulos e campos são organizados de forma clara, favorecendo a leitura e o entendimento.
+
+### Hierarquia da informação
+Existe uma hierarquia visual bem definida:  
+1. título principal da página;  
+2. identificação do usuário;  
+3. informações gerais;  
+4. configurações de segurança.  
+
+Essa estrutura facilita a compreensão e orienta o fluxo de uso.
+
+### Redução da carga cognitiva
+A divisão do conteúdo em blocos funcionais reduz a complexidade percebida da tarefa.  
+O usuário consegue focar em uma ação por vez, sem distrações ou excesso de informação na mesma área.
+
+### Acessibilidade
+Os campos possuem tamanho adequado e espaçamento confortável, facilitando a interação em diferentes dispositivos.  
+Os botões apresentam área de clique ampla, contribuindo para melhor usabilidade em telas menores ou interfaces touch.
+
+### Compatibilidade com o usuário
+A terminologia utilizada, como **Caixa-Forte**, **Chave Mestra** e **Mestre da Caixa-Forte**, reforça a metáfora do sistema financeiro e mantém coerência com a proposta do produto.  
+Isso torna a experiência mais intuitiva e alinhada ao contexto da aplicação.
+
+## Considerações Finais
+
+A tela de **Perfil & Segurança** apresenta uma estrutura visual bem organizada, coerente com a identidade do sistema e adequada ao contexto de uma aplicação web de gestão financeira.  
+A separação entre dados cadastrais e credenciais de segurança melhora a experiência do usuário, reduz erros e fortalece a sensação de controle e proteção das informações pessoais.
+
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
