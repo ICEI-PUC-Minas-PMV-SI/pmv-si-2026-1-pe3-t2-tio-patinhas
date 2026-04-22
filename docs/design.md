@@ -197,82 +197,49 @@ Apresentar ao usuário uma visão geral do seu patrimônio financeiro, reunindo 
 
 ![Tela de Perfil e Segurança](/docs/assets/img/Telas/07-Perfil.png)
 
-## Objetivo da Tela
+### Objetivo da Tela  
+Permitir que o usuário gerencie as informações pessoais da conta e as credenciais de segurança do sistema de controle financeiro. A tela funciona como um espaço seguro para atualização de dados cadastrais, como nome de exibição e e-mail, além da alteração da chave mestra, garantindo maior controle e proteção sobre o acesso à plataforma.
 
-Permitir que o usuário gerencie as informações pessoais da sua conta e as credenciais de segurança do sistema de controle financeiro.  
-A tela funciona como o painel central para alteração de dados gerais, como nome e e-mail, além da atualização da chave mestra de acesso, garantindo que o titular da conta mantenha seu perfil atualizado e a segurança da sua **Caixa-Forte** em dia.
 
-## Princípios Gestálticos Aplicados
+### Princípios Gestálticos
 
-### Proximidade
-Os campos e botões estão agrupados logicamente em seções distintas, como **Informações Gerais** e **Alterar Chave Mestra**.  
-Essa organização permite ao usuário compreender com clareza quais elementos pertencem a cada ação dentro da tela.
+- **Proximidade:** Os elementos estão organizados em grupos funcionais distintos, como a seção de informações gerais e a seção de alteração da chave mestra, indicando claramente quais campos pertencem a cada ação.
 
-### Semelhança
-Os campos de entrada seguem o mesmo padrão visual, com bordas arredondadas, fundo claro e tipografia consistente.  
-Essa uniformidade facilita o reconhecimento dos elementos interativos e fortalece a identidade visual da interface.
+- **Semelhança:** Os campos de entrada compartilham o mesmo estilo visual, com bordas arredondadas, tipografia consistente e cores padronizadas, reforçando a identidade visual e facilitando o reconhecimento dos elementos interativos.
 
-### Continuidade
-A disposição vertical dos componentes conduz o olhar do usuário de forma natural, iniciando no título da página, passando pelas informações do perfil e chegando às áreas de edição e segurança.  
-Isso contribui para uma navegação intuitiva e fluida.
+- **Continuidade:** A organização vertical dos componentes conduz o olhar do usuário do topo da página, com o título e identificação do perfil, até os formulários e botões de ação, favorecendo uma navegação intuitiva.
 
-### Figura-fundo
-O contraste entre o fundo claro da página, os cards brancos e a barra lateral escura destaca as áreas principais de interação.  
-Esse contraste ajuda o usuário a identificar rapidamente onde estão as informações e ações mais importantes.
+- **Figura-fundo:** O contraste entre o fundo claro da área principal, os cards brancos e a barra lateral escura destaca os blocos de interação e facilita a identificação das áreas mais importantes da tela.
 
-## Regras de Ouro Aplicadas
+- **Fechamento:** O uso de cards com contornos bem definidos cria unidades visuais organizadas, permitindo que o usuário perceba cada seção da interface como um bloco coeso e funcional.
 
-### Consistência
-A interface mantém padronização visual entre campos, botões, ícones, espaçamentos e tipografia.  
-Além disso, a paleta de cores institucional é preservada em toda a tela, promovendo unidade visual e previsibilidade.
 
-### Feedback
-Os botões de ação, como **Salvar Alterações** e **Atualizar Segurança**, possuem destaque visual por meio de cor contrastante e ícones, sinalizando claramente sua função.  
-A navegação lateral também fornece feedback de localização ao destacar a opção ativa.
+### Regras de Ouro
 
-### Prevenção de erros
-A separação entre atualização de dados gerais e alteração da chave mestra reduz a chance de ações equivocadas.  
-Além disso, a exigência de confirmação da nova chave contribui para evitar erros de digitação e reforça a segurança da operação.
+- **Consistência:** A interface mantém padronização visual entre campos, botões, ícones, espaçamentos e tipografia, criando uma experiência previsível e alinhada com a identidade do sistema.
 
-### Reconhecimento em vez de memorização
-Os rótulos dos campos são claros e objetivos, como **Nome de Exibição**, **E-mail (Recuperação e Login)**, **Chave Mestra Atual** e **Confirmar Nova Chave**.  
-Isso reduz a necessidade de memorização e facilita o preenchimento correto das informações.
+- **Feedback:** Os botões “Salvar Alterações” e “Atualizar Segurança” apresentam destaque visual por meio de cores contrastantes e ícones, indicando claramente suas funções como ações principais da tela.
 
-### Controle do usuário
-A interface permite que o usuário decida quais informações deseja atualizar, sem obrigá-lo a alterar tudo de uma só vez.  
-Além disso, o menu lateral garante liberdade de navegação entre as demais áreas do sistema.
+- **Prevenção de erros:** A separação entre edição de informações gerais e alteração da chave mestra reduz a chance de erros operacionais. Além disso, a confirmação da nova chave contribui para evitar falhas de digitação e reforça a segurança.
 
-## Recomendações Ergonômicas
+- **Reconhecimento em vez de memorização:** O uso de rótulos claros, como “Nome de Exibição”, “E-mail (Recuperação e Login)”, “Chave Mestra Atual” e “Confirmar Nova Chave”, facilita o entendimento imediato e reduz a necessidade de memorização.
 
-### Clareza visual
-A tela apresenta boa legibilidade por meio do contraste entre texto, fundo e elementos interativos.  
-Os títulos, subtítulos e campos são organizados de forma clara, favorecendo a leitura e o entendimento.
+- **Controle do usuário:** A tela oferece autonomia para que o usuário escolha atualizar apenas os dados que desejar, além de manter a navegação lateral disponível para acesso livre às demais funcionalidades do sistema.
 
-### Hierarquia da informação
-Existe uma hierarquia visual bem definida:  
-1. título principal da página;  
-2. identificação do usuário;  
-3. informações gerais;  
-4. configurações de segurança.  
 
-Essa estrutura facilita a compreensão e orienta o fluxo de uso.
+### Recomendações Ergonômicas
 
-### Redução da carga cognitiva
-A divisão do conteúdo em blocos funcionais reduz a complexidade percebida da tarefa.  
-O usuário consegue focar em uma ação por vez, sem distrações ou excesso de informação na mesma área.
+- **Clareza visual:** O contraste entre textos, campos, botões e fundo melhora a legibilidade e facilita a identificação rápida das informações e ações disponíveis.
 
-### Acessibilidade
-Os campos possuem tamanho adequado e espaçamento confortável, facilitando a interação em diferentes dispositivos.  
-Os botões apresentam área de clique ampla, contribuindo para melhor usabilidade em telas menores ou interfaces touch.
+- **Hierarquia da informação:** O título principal, seguido da identificação do usuário e depois das seções de edição e segurança, estabelece uma hierarquia visual clara e favorece o entendimento da tela.
 
-### Compatibilidade com o usuário
-A terminologia utilizada, como **Caixa-Forte**, **Chave Mestra** e **Mestre da Caixa-Forte**, reforça a metáfora do sistema financeiro e mantém coerência com a proposta do produto.  
-Isso torna a experiência mais intuitiva e alinhada ao contexto da aplicação.
+- **Redução da carga cognitiva:** A divisão do conteúdo em blocos funcionais reduz a complexidade percebida da interface, permitindo que o usuário foque em uma tarefa por vez.
 
-## Considerações Finais
+- **Acessibilidade:** O tamanho dos campos, o espaçamento entre elementos e a dimensão dos botões favorecem a interação em diferentes dispositivos, inclusive em telas menores.
 
-A tela de **Perfil & Segurança** apresenta uma estrutura visual bem organizada, coerente com a identidade do sistema e adequada ao contexto de uma aplicação web de gestão financeira.  
-A separação entre dados cadastrais e credenciais de segurança melhora a experiência do usuário, reduz erros e fortalece a sensação de controle e proteção das informações pessoais.
+- **Compatibilidade com o usuário:** A linguagem utilizada, como “Caixa-Forte”, “Chave Mestra” e “Mestre da Caixa-Forte”, reforça a metáfora do sistema financeiro e torna a experiência mais intuitiva e coerente com o contexto do produto.
+
+---
 
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
