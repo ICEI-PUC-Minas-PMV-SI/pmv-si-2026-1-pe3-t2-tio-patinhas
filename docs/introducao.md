@@ -9,7 +9,7 @@ Diante desse contexto, este trabalho apresenta o desenvolvimento de uma aplicaç
 
 O sistema de gestão financeira “Tio Patinhas” busca resolver a dificuldade que muitas pessoas enfrentam para controlar e compreender suas próprias finanças. Frequentemente, receitas e despesas são registradas de forma desorganizada, o que dificulta a visualização clara de para onde o dinheiro está sendo direcionado. Essa falta de controle pode levar a gastos excessivos, dificuldades no planejamento financeiro e tomada de decisões pouco conscientes (RODRIGUES; FREITAS; FREITAS, 2024; SANTOS; ALTOÉ, 2023).
 
-Além disso, o aumento do endividamento da população evidencia a relevância do problema, especialmente entre jovens e adultos que não possuem hábitos consolidados de organização financeira (CNDL; SPC BRASIL, 2024; SERASA, 2024).
+Além disso, o aumento do endividamento da população evidencia a relevância do problema, especialmente entre jovens e adultos que não possuem hábitos consolidados de organização financeira (CNDL; SPC BRASIL, s.d.; SERASA, 2024).
 
 Dessa forma, o sistema propõe centralizar e organizar as informações financeiras do usuário em um ambiente simples e acessível, permitindo melhor acompanhamento dos gastos, maior controle do orçamento e apoio na construção de hábitos financeiros mais saudáveis (CARVALHO; SANTOS; GREGÓRIO, 2024).
 
@@ -32,7 +32,7 @@ Foi pensando nisso que o "Tio Patinhas" foi desenvolvido. Uma aplicação web si
 
 ## 1.4. Público alvo
 
-A solução proposta destina-se a jovens e adultos entre 18 e 45 anos, como estudantes, profissionais em início de carreira e trabalhadores autônomos que buscam maior controle das finanças pessoais. Embora utilizem tecnologias digitais com frequência, muitos apresentam dificuldades no registro organizado de receitas e despesas e na análise dos próprios gastos (VENÂNCIO et al., 2024; REVISTA FOCO, 2024).
+A solução proposta destina-se a jovens e adultos entre 18 e 45 anos, como estudantes, profissionais em início de carreira e trabalhadores autônomos que buscam maior controle das finanças pessoais. Embora utilizem tecnologias digitais com frequência, muitos apresentam dificuldades no registro organizado de receitas e despesas e na análise dos próprios gastos.
 
 O sistema visa atender a esse público por meio de uma ferramenta web simples, intuitiva e funcional, que auxilie no acompanhamento financeiro e na tomada de decisões mais conscientes.
 
