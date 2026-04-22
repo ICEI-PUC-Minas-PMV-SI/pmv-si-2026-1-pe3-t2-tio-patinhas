@@ -14,14 +14,6 @@ Artigo (sem autor indicado). Finanças Pessoais e Desafios Atuais: Uma Pesquisa 
 
 CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
 
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
-
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
-
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
-
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
-
 CNDL; SPC BRASIL. Pesquisa: o perfil financeiro dos jovens da Geração Z. Disponível em: https://cndl.org.br. Acesso em: 17 mar. 2026.
 
 INUP ASSESSORIA CONTÁBIL. Tendências financeiras de 2024: o impacto das novas tecnologias. 2024. Disponível em: https://inupcontabil.com.br. Acesso em: 17 mar. 2026.
@@ -43,8 +35,6 @@ RANKMYAPP. Dois terços dos apps financeiros enfrentam dificuldades para atrair 
 RODRIGUES, A.; FREITAS, C. R. de; FREITAS, C. L. de. Educação financeira para jovens e adultos: um estudo sobre conhecimento, endividamento e impacto psicossocial. Revista de Gestão e Secretariado, v. 15, n. 10, e4353, 2024. DOI: https://doi.org/10.7769/gesec.v15i10.4353
 
 SANTOS, L. V. dos; ALTOÉ, S. M. L. Finanças pessoais: um estudo envolvendo os alunos do curso de Ciências Contábeis. Redeca, Revista Eletrônica do Departamento de Ciências Contábeis e Departamento de Atuária e Métodos Quantitativos, v. 10, e63504, 2023. DOI: https://doi.org/10.23925/2446-9513.2023v10id63504
-
-SERASA. Mapa da Inadimplência e Negociação de Dívidas no Brasil. São Paulo: Serasa, 2024. Disponível em: https://www.serasa.com.br. Acesso em: 17 mar. 2026.
 
 SERASA. Mapa da Inadimplência e Negociação de Dívidas no Brasil. São Paulo: Serasa, 2024. Disponível em: https://www.serasa.com.br. Acesso em: 17 mar. 2026.
 
