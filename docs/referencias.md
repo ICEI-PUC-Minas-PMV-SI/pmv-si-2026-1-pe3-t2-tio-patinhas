@@ -4,39 +4,19 @@ Lista de referências utilizadas e citadas no trabalho.
 
 ### Referências
 
-ALVES, Ana. Educação financeira digital: as ferramentas que estão revolucionando as finanças pessoais em 2025. Diário do Nordeste, 2025. Disponível em: https://diariodonordeste.verdesmares.com.br. Acesso em: 17 mar. 2026.
+ALMEIDA DOS SANTOS, João Renan; VERONESE, Arthur Longo; LONGO, Luci. *Finanças Pessoais e Desafios Atuais: Uma Pesquisa com Estudantes Universitários para Estruturação de um App Financeiro e Pedagógico*. Administração: Ensino e Pesquisa, v. 23, n. 3, 2022. DOI: [https://doi.org/10.13058/raep.2022.v23n3.2228](https://doi.org/10.13058/raep.2022.v23n3.2228). Disponível em: [https://raep.emnuvens.com.br/raep/article/view/2228](https://raep.emnuvens.com.br/raep/article/view/2228). Acesso em: 22 abr. 2026.
 
-Artigo (sem autor indicado). A relação entre educação financeira e endividamento estudantil. Revista Foco, 2024. Disponível em: https://ojs.focopublicacoes.com.br. Acesso em: 17 mar. 2026.
+ALVES, Ana. *Educação financeira digital: as ferramentas que estão revolucionando as finanças pessoais em 2025*. Diário do Nordeste, 17 jun. 2025. Disponível em: [https://diariodonordeste.verdesmares.com.br/opiniao/colunistas/ana-alves/educacao-financeira-digital-as-ferramentas-que-estao-revolucionando-as-financas-pessoais-em-2025-1.3660707](https://diariodonordeste.verdesmares.com.br/opiniao/colunistas/ana-alves/educacao-financeira-digital-as-ferramentas-que-estao-revolucionando-as-financas-pessoais-em-2025-1.3660707). Acesso em: 22 abr. 2026.
 
-Artigo (sem autor indicado). Aplicativo para controle financeiro de estudantes universitários. Revista de Gestão e Secretariado, 2024. Disponível em: https://ojs.revistagesec.org.br. Acesso em: 17 mar. 2026.
+ANDRADE, Ismael Kentenich Mesquita et al. *Aplicativo para controle financeiro de estudantes universitários*. Revista de Gestão e Secretariado, v. 15, n. 4, e3641, 2024. DOI: [https://doi.org/10.7769/gesec.v15i4.3641](https://doi.org/10.7769/gesec.v15i4.3641). Disponível em: [https://ojs.revistagesec.org.br/secretariado/article/view/3641](https://ojs.revistagesec.org.br/secretariado/article/view/3641). Acesso em: 22 abr. 2026.
 
-Artigo (sem autor indicado). Finanças Pessoais e Desafios Atuais: Uma Pesquisa com Estudantes Universitários para Estruturação de um App Financeiro e Pedagógico. Administração: Ensino e Pesquisa. Universidade Estadual do Centro-Oeste do Paraná, 2022. Disponível em: https://raep.emnuvens.com.br. Acesso em: 17 mar. 2026.
+CARVALHO, Matheus Ferreira de; SANTOS, Natanael Marconato dos; GREGÓRIO, Jorge Luís. *SaveU Money: sistema de gerenciamento financeiro pessoal*. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024. Disponível em: [https://ric.cps.sp.gov.br/handle/123456789/29849](https://ric.cps.sp.gov.br/handle/123456789/29849). Acesso em: 22 abr. 2026.
 
-CARVALHO, M. F.; SANTOS, N. M.; GREGÓRIO, J. L. SaveU Money: sistema de gerenciamento financeiro pessoal. 2024. Artigo de Graduação (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia Prof. José Camargo, Jales, 2024.
+INUP ASSESSORIA CONTÁBIL. *Tendências financeiras de 2024: o impacto das novas tecnologias*. 2024. Disponível em: [https://inupcontabil.com.br/tendencias-financeiras-de-2024-o-impacto-das-novas-tecnologias/](https://inupcontabil.com.br/tendencias-financeiras-de-2024-o-impacto-das-novas-tecnologias/). Acesso em: 22 abr. 2026.
 
-CNDL; SPC BRASIL. Pesquisa: o perfil financeiro dos jovens da Geração Z. Disponível em: https://cndl.org.br. Acesso em: 22 mar. 2026.
+LUSARDI, Annamaria; MITCHELL, Olivia S. *The Importance of Financial Literacy: Opening a New Field*. NBER Working Paper 31145, 2023. DOI: [https://doi.org/10.3386/w31145](https://doi.org/10.3386/w31145). Disponível em: [https://www.nber.org/papers/w31145](https://www.nber.org/papers/w31145). Acesso em: 22 abr. 2026.
 
-INUP ASSESSORIA CONTÁBIL. Tendências financeiras de 2024: o impacto das novas tecnologias. 2024. Disponível em: https://inupcontabil.com.br. Acesso em: 17 mar. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). *OECD/INFE 2023 International Survey of Adult Financial Literacy*. Paris: OECD, 2023. Disponível em: [https://www.oecd.org/en/publications/oecd-infe-2023-international-survey-of-adult-financial-literacy_56003a32-en.html](https://www.oecd.org/en/publications/oecd-infe-2023-international-survey-of-adult-financial-literacy_56003a32-en.html). Acesso em: 22 abr. 2026.
 
-IPSOS; GOOGLE. Pesquisa sobre uso de inteligência artificial no Brasil. 2024. Disponível em: https://www.digio.com.br/blog. Acesso em: 17 mar. 2026.
-
-LINA OPEN X; MINDMINERS. Do PIX ao planejamento financeiro: como a tecnologia está mudando nossa relação com o dinheiro. São Paulo, 2025. Disponível em: https://exame.com. Acesso em: 17 mar. 2026.
-
-LUSARDI, Annamaria; MITCHELL, Olivia S. The importance of financial literacy: opening a new field. Cambridge: National Bureau of Economic Research, 2023. Disponível em: https://www.nber.org/papers/w31145
-
-MIX VALE. Bancos digitais e crédito fácil transformam cenário financeiro de milhões de usuários em 2025. Disponível em: https://www.mixvale.com.br. Acesso em: 17 mar. 2026.
-
-ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). OECD/INFE 2023 International Survey of Adult Financial Literacy. Paris: OECD Publishing, 2023. Disponível em: https://www.oecd.org/en/publications/oecd-infe-2023-international-survey-of-adult-financial-literacy_56003a32-en.html
-
-PWC; ASSOCIAÇÃO BRASILEIRA DE CRÉDITO DIGITAL (ABCD). Pesquisa Fintechs de Crédito Digital 2024. São Paulo: PwC Brasil, 2024. Disponível em: https://www.pwc.com.br. Acesso em: 17 mar. 2026.
-
-RANKMYAPP. Dois terços dos apps financeiros enfrentam dificuldades para atrair usuários. TI Inside Online, ago. 2025. Disponível em: https://tiinside.com.br. Acesso em: 17 mar. 2026.
-
-RODRIGUES, A.; FREITAS, C. R. de; FREITAS, C. L. de. Educação financeira para jovens e adultos: um estudo sobre conhecimento, endividamento e impacto psicossocial. Revista de Gestão e Secretariado, v. 15, n. 10, e4353, 2024. DOI: https://doi.org/10.7769/gesec.v15i10.4353
-
-SANTOS, L. V. dos; ALTOÉ, S. M. L. Finanças pessoais: um estudo envolvendo os alunos do curso de Ciências Contábeis. Redeca, Revista Eletrônica do Departamento de Ciências Contábeis e Departamento de Atuária e Métodos Quantitativos, v. 10, e63504, 2023. DOI: https://doi.org/10.23925/2446-9513.2023v10id63504
-
-SERASA. Mapa da Inadimplência e Negociação de Dívidas no Brasil. São Paulo: Serasa, 2024. Disponível em: https://www.serasa.com.br. Acesso em: 17 mar. 2026.
-
-VENÂNCIO, A. et al. Tecnologia e Planejamento Financeiro Pessoal: uma análise da percepção de alunos do curso de graduação em ciências contábeis. Revista Eletrônica de Ciências Sociais Aplicadas, 2024. Disponível em: https://revista.fisul.edu.br. Acesso em: 22 mar. 2026.
+PEREIRA, Gabriel. *Mais de 70% dos brasileiros afirmam que a tecnologia ajudou a melhorar a relação com o dinheiro*. Let’s Money, 2 mar. 2026. Disponível em: [https://www.letsmoney.com.br/noticias/pesquisa-brasileiros-tecnologia-melhora-dinheiro/](https://www.letsmoney.com.br/noticias/pesquisa-brasileiros-tecnologia-melhora-dinheiro/). Acesso em: 22 abr. 2026.
 
