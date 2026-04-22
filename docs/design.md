@@ -209,7 +209,44 @@ Permitir que o usuário registre, visualize e gerencie suas transações finance
 
 ![Tela de Investimentos](/docs/assets/img/Telas/05-Investimentos.png)
 
----
+### Objetivo da Tela  
+Permitir que o usuário acompanhe e gerencie seus investimentos, registrando aportes em diferentes ativos e visualizando a evolução do patrimônio com base nos valores atuais e históricos.
+
+### Princípios Gestálticos
+
+- **Proximidade:** O saldo em destaque, o formulário de novo aporte e a tabela de ativos estão organizados em blocos distintos, indicando funções diferentes: resumo, ação e visualização.
+
+- **Semelhança:** Os campos do formulário seguem o mesmo padrão visual, assim como os itens da tabela, garantindo consistência e facilitando o reconhecimento dos elementos.
+
+- **Continuidade:** A disposição vertical conduz o usuário do resumo do patrimônio (topo), para o registro de novos aportes e, por fim, para a lista de investimentos.
+
+- **Figura-fundo:** O card de saldo (com cor mais forte) se destaca do restante da interface, chamando atenção para a informação mais relevante. Já os valores positivos utilizam cores que reforçam ganho ou estabilidade.
+
+- **Fechamento:** Cada seção (saldo, formulário e tabela) está contida em cards bem definidos, permitindo que o usuário compreenda cada área como um bloco independente.
+
+### Regras de Ouro
+
+- **Consistência:** A interface mantém o mesmo padrão visual das demais telas (cores, tipografia e componentes), garantindo uma experiência uniforme.
+
+- **Feedback:** O saldo em Bitcoin e os valores totais dos ativos fornecem retorno imediato ao usuário sobre sua posição financeira. O botão “Adicionar” destaca a ação principal.
+
+- **Prevenção de erros:** O uso de campos estruturados (quantidade, preço, data) reduz inconsistências nos dados inseridos.
+
+- **Reconhecimento em vez de memorização:** O uso de exemplos como “EX: BTC” e a organização por colunas (ativo, quantidade, preço, etc.) facilita o entendimento sem exigir esforço do usuário.
+
+- **Controle do usuário:** A coluna “Ações” permite futuras interações como edição ou remoção de ativos, garantindo flexibilidade no gerenciamento.
+
+### Recomendações Ergonômicas
+
+- **Clareza visual:** A separação entre resumo, formulário e tabela facilita a leitura e o entendimento das informações.
+
+- **Hierarquia da informação:** O saldo total no topo, seguido do formulário e depois da listagem de ativos, orienta o fluxo natural de uso.
+
+- **Redução da carga cognitiva:** A interface apresenta apenas os dados essenciais para acompanhamento e registro de investimentos.
+
+- **Acessibilidade:** Os campos e botões possuem bom espaçamento e legibilidade, facilitando a interação em diferentes dispositivos.
+
+- **Compatibilidade com o usuário:** Termos como “Ativo”, “Quantidade”, “Preço Pago” e “Total Atual” são comuns no contexto de investimentos, tornando a interface intuitiva.
 
 ### Tela de Metas
 
