@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/pedro/Projetos/Tio Patinhas/pmv-si-2026-1-pe3-t2-tio-patinhas/src/backend/TioPatinhas.Api/TioPatinhas.Api.csproj": {}
+    "C:\\Users\\igorf\\OneDrive - sga.pucminas.br\\pmv-si-2026-1-pe3-t2-tio-patinhas\\src\\backend\\TioPatinhas.Api\\TioPatinhas.Api.csproj": {}
   },
   "projects": {
-    "/home/pedro/Projetos/Tio Patinhas/pmv-si-2026-1-pe3-t2-tio-patinhas/src/backend/TioPatinhas.Api/TioPatinhas.Api.csproj": {
+    "C:\\Users\\igorf\\OneDrive - sga.pucminas.br\\pmv-si-2026-1-pe3-t2-tio-patinhas\\src\\backend\\TioPatinhas.Api\\TioPatinhas.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pedro/Projetos/Tio Patinhas/pmv-si-2026-1-pe3-t2-tio-patinhas/src/backend/TioPatinhas.Api/TioPatinhas.Api.csproj",
+        "projectUniqueName": "C:\\Users\\igorf\\OneDrive - sga.pucminas.br\\pmv-si-2026-1-pe3-t2-tio-patinhas\\src\\backend\\TioPatinhas.Api\\TioPatinhas.Api.csproj",
         "projectName": "TioPatinhas.Api",
-        "projectPath": "/home/pedro/Projetos/Tio Patinhas/pmv-si-2026-1-pe3-t2-tio-patinhas/src/backend/TioPatinhas.Api/TioPatinhas.Api.csproj",
-        "packagesPath": "/home/pedro/.nuget/packages/",
-        "outputPath": "/home/pedro/Projetos/Tio Patinhas/pmv-si-2026-1-pe3-t2-tio-patinhas/src/backend/TioPatinhas.Api/obj/",
+        "projectPath": "C:\\Users\\igorf\\OneDrive - sga.pucminas.br\\pmv-si-2026-1-pe3-t2-tio-patinhas\\src\\backend\\TioPatinhas.Api\\TioPatinhas.Api.csproj",
+        "packagesPath": "C:\\Users\\igorf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\igorf\\OneDrive - sga.pucminas.br\\pmv-si-2026-1-pe3-t2-tio-patinhas\\src\\backend\\TioPatinhas.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\igorf\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/pedro/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
