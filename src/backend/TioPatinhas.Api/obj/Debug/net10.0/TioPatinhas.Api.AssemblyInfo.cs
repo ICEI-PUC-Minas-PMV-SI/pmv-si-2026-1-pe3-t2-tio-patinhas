@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TioPatinhas.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fdaff726f25b8aa01ef2d0cf4084d2b9d28ddaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a7c35f40c2a394f811bad50aad2fb814fceafd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TioPatinhas.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TioPatinhas.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
