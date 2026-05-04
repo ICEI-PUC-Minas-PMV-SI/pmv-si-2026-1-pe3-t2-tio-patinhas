@@ -8,5 +8,7 @@ namespace TioPatinhas.Api.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
         
         public DbSet<Categoria> Categorias { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }
