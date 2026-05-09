@@ -342,6 +342,7 @@ Permitir que o usuário gerencie as informações pessoais da conta e as credenc
 ## 4.4 Testes com Protótipos
 
 Relatório de testes com usuário 01: [Relatório de testes com usuário 01](/docs/assets/docs/Relatorio_de_Testes_com_Usario-01.pdf)
+Relatório de testes com usuário 02: [Relatório de testes com usuário 02](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_02.pdf)
 
 
 
