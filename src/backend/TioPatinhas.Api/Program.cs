@@ -15,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IGoalService, GoalService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var key = builder.Configuration["Jwt:Key"] ?? "super_secret_key_123456";

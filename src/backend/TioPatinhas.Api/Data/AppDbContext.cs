@@ -10,5 +10,7 @@ namespace TioPatinhas.Api.Data
         public DbSet<Categoria> Categorias { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Goal> Goals { get; set; }
     }
 }
