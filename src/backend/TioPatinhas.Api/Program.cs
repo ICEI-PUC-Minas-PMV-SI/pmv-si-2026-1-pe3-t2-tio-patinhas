@@ -16,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ITransacaoService, TransacaoService>();
 
 var key = builder.Configuration["Jwt:Key"] ?? "super_secret_key_123456";
 

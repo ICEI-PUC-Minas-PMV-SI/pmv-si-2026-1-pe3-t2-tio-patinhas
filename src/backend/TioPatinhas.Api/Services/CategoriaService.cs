@@ -34,7 +34,7 @@ namespace TioPatinhas.Api.Services
             {
                 Nome = dto.Nome,
                 Tipo = dto.Tipo,
-                UsuarioId = usuarioId // Fixo até ter o login
+                UserId = usuarioId 
             };
 
             _context.Categorias.Add(categoria);
