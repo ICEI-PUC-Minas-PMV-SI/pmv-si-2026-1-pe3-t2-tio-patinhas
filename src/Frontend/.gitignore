@@ -1,15 +1,8 @@
-################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/src/backend/TioPatinhas.Api/.vs
-
-# Gitignore frontend ---
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
-.pnp
+/node_modules
+/.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -18,14 +11,14 @@ node_modules
 !.yarn/versions
 
 # testing
-coverage
+/coverage
 
 # next.js
-.next/
-out/
+/.next/
+/out/
 
 # production
-build
+/build
 
 # misc
 .DS_Store
