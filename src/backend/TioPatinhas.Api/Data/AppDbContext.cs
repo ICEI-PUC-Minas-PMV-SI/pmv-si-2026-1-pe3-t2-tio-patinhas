@@ -20,5 +20,6 @@ namespace TioPatinhas.Api.Data
             .WithMany(c => c.Transacoes)
             .UsingEntity(j => j.HasIndex("TransacoesId", "CategoriasId").IsUnique());
         }
+        public DbSet<Goal> Goals { get; set; }
     }
 }
