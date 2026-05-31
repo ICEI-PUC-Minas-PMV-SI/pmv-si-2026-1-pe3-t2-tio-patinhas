@@ -350,3 +350,12 @@ Relatório de testes com usuário 06: [Relatório 06](/docs/assets/docs/Relatori
 
 
 --- 
+
+## 4.5 Avaliações Heurísticas
+
+Avaliação de Wesley: [AvaliaçãoDeWesley](/docs/assets/docs/Avaliação_Heurística_Wesley_Azevedo.pdf)<br>
+Avaliação de Igor: [AvaliaçãoDeIgor](/docs/assets/docs/Avaliação_Heurística_Igor_Fernando_Costa.pdf)<br>
+Avaliação de Pedro: [AvaliaçãoDePedro]<br>
+Avaliação de Isadora: [AvaliaçãoDeIsadora]<br>
+Avaliação de André: [AvaliaçãoDeAndré]<br>
+Avaliação de Raphael: [AvaliaçãoDeRaphael]<br>
