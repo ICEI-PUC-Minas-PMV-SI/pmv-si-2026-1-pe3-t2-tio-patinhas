@@ -9,12 +9,11 @@ namespace TioPatinhas.Api.Controllers
     [ApiController]
     [Authorize]
     [Route("api/[controller]")]
-   
-   public class TransacaoController : ControllerBase
+    public class TransactionsController : ControllerBase
     {
-        private readonly ITransacaoService _service;
+        private readonly ITransactionService _service;
 
-        public TransacaoController(ITransacaoService service)
+        public TransactionsController(ITransactionService service)
         {
             _service = service;
         }
@@ -23,30 +22,30 @@ namespace TioPatinhas.Api.Controllers
         public async Task<IActionResult> Get()
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-            var transacoes = await _service.ObterTodasAsync(userId);
-            return Ok(transacoes);
+            var transactions = await _service.GetAllAsync(userId);
+            return Ok(transactions);
         }   
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-            var transacao = await _service.ObterPorIdAsync(id, userId);
-            if (transacao == null)
+            var transaction = await _service.GetByIdAsync(id, userId);
+            if (transaction == null)
             {
-                return NotFound("Transação não encontrada.");
+                return NotFound("Transaction not found.");
             }
-            return Ok(transacao);
+            return Ok(transaction);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] TransacaoRequestDTO dto)
+        public async Task<IActionResult> Post([FromBody] TransactionRequestDTO dto)
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
             try
             {
-                var nova = await _service.AdicionarAsync(dto, userId);
-                return CreatedAtAction(nameof(GetById), new { id = nova.Id }, nova);
+                var newTransaction = await _service.AddAsync(dto, userId);
+                return CreatedAtAction(nameof(GetById), new { id = newTransaction.Id }, newTransaction);
             }
             catch (InvalidOperationException ex)
             {
@@ -58,8 +57,8 @@ namespace TioPatinhas.Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-            var removido = await _service.RemoverAsync(id, userId);
-            if (!removido) return NotFound("Transação não encontrada.");
+            var removed = await _service.RemoveAsync(id, userId);
+            if (!removed) return NotFound("Transaction not found.");
             return NoContent();
         }
     }

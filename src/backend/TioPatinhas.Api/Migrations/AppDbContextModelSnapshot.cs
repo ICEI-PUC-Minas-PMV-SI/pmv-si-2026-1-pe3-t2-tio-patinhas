@@ -17,33 +17,33 @@ namespace TioPatinhas.Api.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.6");
 
-            modelBuilder.Entity("CategoriaTransacao", b =>
+            modelBuilder.Entity("CategoryTransaction", b =>
                 {
-                    b.Property<int>("CategoriasId")
+                    b.Property<int>("CategoriesId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TransacoesId")
+                    b.Property<int>("TransactionsId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("CategoriasId", "TransacoesId");
+                    b.HasKey("CategoriesId", "TransactionsId");
 
-                    b.HasIndex("TransacoesId", "CategoriasId")
+                    b.HasIndex("TransactionsId", "CategoriesId")
                         .IsUnique();
 
-                    b.ToTable("CategoriaTransacao");
+                    b.ToTable("CategoryTransaction");
                 });
 
-            modelBuilder.Entity("TioPatinhas.Api.Models.Categoria", b =>
+            modelBuilder.Entity("TioPatinhas.Api.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Nome")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Tipo")
+                    b.Property<int>("Type")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("UserId")
@@ -51,31 +51,31 @@ namespace TioPatinhas.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("TioPatinhas.Api.Models.Transacao", b =>
+            modelBuilder.Entity("TioPatinhas.Api.Models.Transaction", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateOnly>("Data")
+                    b.Property<DateOnly>("Date")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Descricao")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Valor")
+                    b.Property<decimal>("Value")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Transacoes");
+                    b.ToTable("Transactions");
                 });
 
                 modelBuilder.Entity("TioPatinhas.Api.Models.Goal", b =>
@@ -131,17 +131,17 @@ namespace TioPatinhas.Api.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("CategoriaTransacao", b =>
+            modelBuilder.Entity("CategoryTransaction", b =>
                 {
-                    b.HasOne("TioPatinhas.Api.Models.Categoria", null)
+                    b.HasOne("TioPatinhas.Api.Models.Category", null)
                         .WithMany()
-                        .HasForeignKey("CategoriasId")
+                        .HasForeignKey("CategoriesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TioPatinhas.Api.Models.Transacao", null)
+                    b.HasOne("TioPatinhas.Api.Models.Transaction", null)
                         .WithMany()
-                        .HasForeignKey("TransacoesId")
+                        .HasForeignKey("TransactionsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -11,55 +11,50 @@ namespace TioPatinhas.Api.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "UsuarioId",
-                table: "Categorias",
-                newName: "UserId");
-
             migrationBuilder.CreateTable(
-                name: "Transacoes",
+                name: "Transactions",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Descricao = table.Column<string>(type: "TEXT", nullable: false),
-                    Data = table.Column<DateOnly>(type: "TEXT", nullable: false),
-                    Valor = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    Date = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    Value = table.Column<decimal>(type: "TEXT", nullable: false),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Transacoes", x => x.Id);
+                    table.PrimaryKey("PK_Transactions", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "CategoriaTransacao",
+                name: "CategoryTransaction",
                 columns: table => new
                 {
-                    CategoriasId = table.Column<int>(type: "INTEGER", nullable: false),
-                    TransacoesId = table.Column<int>(type: "INTEGER", nullable: false)
+                    CategoriesId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TransactionsId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CategoriaTransacao", x => new { x.CategoriasId, x.TransacoesId });
+                    table.PrimaryKey("PK_CategoryTransaction", x => new { x.CategoriesId, x.TransactionsId });
                     table.ForeignKey(
-                        name: "FK_CategoriaTransacao_Categorias_CategoriasId",
-                        column: x => x.CategoriasId,
-                        principalTable: "Categorias",
+                        name: "FK_CategoryTransaction_Categories_CategoriesId",
+                        column: x => x.CategoriesId,
+                        principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CategoriaTransacao_Transacoes_TransacoesId",
-                        column: x => x.TransacoesId,
-                        principalTable: "Transacoes",
+                        name: "FK_CategoryTransaction_Transactions_TransactionsId",
+                        column: x => x.TransactionsId,
+                        principalTable: "Transactions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_CategoriaTransacao_TransacoesId_CategoriasId",
-                table: "CategoriaTransacao",
-                columns: new[] { "TransacoesId", "CategoriasId" },
+                name: "IX_CategoryTransaction_TransactionsId_CategoriesId",
+                table: "CategoryTransaction",
+                columns: new[] { "TransactionsId", "CategoriesId" },
                 unique: true);
         }
 
@@ -67,15 +62,10 @@ namespace TioPatinhas.Api.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CategoriaTransacao");
+                name: "CategoryTransaction");
 
             migrationBuilder.DropTable(
-                name: "Transacoes");
-
-            migrationBuilder.RenameColumn(
-                name: "UserId",
-                table: "Categorias",
-                newName: "UsuarioId");
+                name: "Transactions");
         }
     }
 }

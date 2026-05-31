@@ -19,25 +19,25 @@ namespace TioPatinhas.Api.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.6");
 
-            modelBuilder.Entity("TioPatinhas.Api.Models.Categoria", b =>
+            modelBuilder.Entity("TioPatinhas.Api.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Nome")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Tipo")
+                    b.Property<int>("Type")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("UsuarioId")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("TioPatinhas.Api.Models.Goal", b =>

@@ -7,18 +7,18 @@ namespace TioPatinhas.Api.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
         
-        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Transacao> Transacoes { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        modelBuilder.Entity<Transacao>()
-            .HasMany(t => t.Categorias)
-            .WithMany(c => c.Transacoes)
-            .UsingEntity(j => j.HasIndex("TransacoesId", "CategoriasId").IsUnique());
+            modelBuilder.Entity<Transaction>()
+                .HasMany(t => t.Categories)
+                .WithMany(c => c.Transactions)
+                .UsingEntity(j => j.HasIndex("TransactionsId", "CategoriesId").IsUnique());
         }
         public DbSet<Goal> Goals { get; set; }
     }
