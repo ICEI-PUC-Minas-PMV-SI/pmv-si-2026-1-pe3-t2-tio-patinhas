@@ -53,7 +53,8 @@ O sistema **Tio Patinhas** não contempla:
 | RF08 | Usuário Filtra as Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
 | RF09 | Usuário Recupera a Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
 | RF10 | Usuário Gerencia o Perfil | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
-| RF11 | Usuário Gerencia seus Metas | O sistema deve permitir que o usuário gerencie suas metas,sendo objetivos de curto a longo prazo. | Essencial |
+| RF11 | Usuário Gerencia seus Metas | O sistema deve permitir que o usuário gerencie suas metas, sendo objetivos de curto a longo prazo. | Essencial |
+| RF12 | Usuário Gerencia seus Investimentos | O sistema deve permitir que o usuário gerencie seus investimentos, registrando um novo aporte. | Essencial |
 
 ### 3.3.2 Requisitos Não Funcionais
 
