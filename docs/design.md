@@ -354,8 +354,13 @@ Relatório de testes com usuário 06: [Relatório 06](/docs/assets/docs/Relatori
 ## 4.5 Avaliações Heurísticas
 
 Avaliação de Wesley: [Avaliação Heurística de Wesley](/docs/assets/docs/Avaliação_Heurística_Wesley_Azevedo.pdf)<br>
+
 Avaliação de Igor: [Avaliação Heurística de Igor](/docs/assets/docs/Avaliação_Heurística_Igor_Fernando_Costa.pdf)<br>
-Avaliação de Pedro: [Avaliação Heurística de Pedro]()<br>
+
+Avaliação de Pedro: [Avaliação Heurística de Pedro](/docs/assets/docs/Avaliacao_Heuristica_Pedro_Lyra.pdf)<br>
+
 Avaliação de Isadora: [Avaliação Heurística de Isadora]()<br>
+
 Avaliação de André: [Avaliação Heurística de André]()<br>
+
 Avaliação de Raphael: [Avaliação Heurística de Raphael]()<br>
