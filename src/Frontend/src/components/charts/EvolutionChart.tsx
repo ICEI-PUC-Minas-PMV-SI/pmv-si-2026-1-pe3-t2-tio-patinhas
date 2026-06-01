@@ -107,7 +107,7 @@ export function EvolutionChart({
               />
               <Tooltip 
                 contentStyle={{ borderRadius: '12px', border: '1px solid #E5E7EB', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
-                formatter={(value: any, _name: string, props: { payload?: ChartPoint }) => {
+                formatter={(value: any, _name: any, props: { payload?: ChartPoint }) => {
                   const row = props.payload;
                   const label = METRIC_LABELS[metric] ?? "Valor";
                   const monthNet = row?.monthNet ?? 0;
