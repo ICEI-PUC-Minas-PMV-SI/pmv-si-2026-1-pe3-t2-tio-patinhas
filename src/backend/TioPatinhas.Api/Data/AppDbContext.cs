@@ -21,5 +21,7 @@ namespace TioPatinhas.Api.Data
                 .UsingEntity(j => j.HasIndex("TransactionsId", "CategoriesId").IsUnique());
         }
         public DbSet<Goal> Goals { get; set; }
+
+        public DbSet<Investment> Investments { get; set; }
     }
 }
