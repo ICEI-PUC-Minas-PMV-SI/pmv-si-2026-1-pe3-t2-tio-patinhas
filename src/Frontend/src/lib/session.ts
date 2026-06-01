@@ -46,12 +46,13 @@ export async function fetchAPI(endpoint: string, options: RequestInit = {}) {
     headers.set("Authorization", `Bearer ${token}`);
   }
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5256";
   
   try {
     const response = await fetch(`${API_URL}${endpoint}`, {
       ...options,
       headers,
+      cache: "no-store",
     });
 
     if (!response.ok) {

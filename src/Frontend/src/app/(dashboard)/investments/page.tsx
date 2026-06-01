@@ -1,6 +1,7 @@
 import React from "react";
-import { Plus, Bitcoin, TrendingUp } from "lucide-react";
+import { Bitcoin, Plus } from "lucide-react";
 import { getInvestments } from "@/lib/actions";
+import { formatBtcAmount, sumBtcAmount } from "@/lib/investments";
 import { InvestmentForm } from "./InvestmentForm";
 import { InvestmentRow } from "./InvestmentRow";
 
@@ -8,12 +9,11 @@ export const dynamic = "force-dynamic";
 
 export default async function InvestmentsPage() {
   const investments = await getInvestments();
-  console.log("investments", investments);
 
   // Simple hardcoded BTC price for MVP visualization purposes
   const currentBtcPrice = 340000;
   
-  const totalBtc = investments.filter((i: any) => i.asset.toUpperCase() === 'BTC').reduce((acc: number, curr: any) => acc + curr.amount, 0);
+  const totalBtc = sumBtcAmount(investments);
 
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8">
@@ -37,7 +37,7 @@ export default async function InvestmentsPage() {
           <div>
             <h2 className="text-white/80 font-medium text-lg">Saldo em Bitcoin</h2>
             <div className="flex items-baseline gap-4 mt-1">
-              <span className="text-5xl font-bold font-sans tracking-tight text-[#FFD700]">{totalBtc.toFixed(4)}</span>
+              <span className="text-5xl font-bold font-sans tracking-tight text-[#FFD700]">{formatBtcAmount(totalBtc)}</span>
               <span className="text-xl font-bold text-[#FFD700]/70">BTC</span>
             </div>
             <p className="text-white/60 mt-2">Valor Estimado: R$ {(totalBtc * currentBtcPrice).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
@@ -45,7 +45,6 @@ export default async function InvestmentsPage() {
         </div>
       </section>
 
-      {/* Insert Form Area */}
       <section className="bg-white rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-[#FFD700]/30 p-6">
         <h2 className="text-lg font-bold text-[#1A237E] mb-4 flex items-center gap-2">
           <Plus size={18} className="text-[#FFD700]" />
@@ -77,7 +76,7 @@ export default async function InvestmentsPage() {
               </tr>
             )}
             
-            {investments.map((inv: any) => (
+            {investments.map((inv) => (
               <InvestmentRow key={inv.id} inv={inv} currentBtcPrice={currentBtcPrice} />
             ))}
           </tbody>

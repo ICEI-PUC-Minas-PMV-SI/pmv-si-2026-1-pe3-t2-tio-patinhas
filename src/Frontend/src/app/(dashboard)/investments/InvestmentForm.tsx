@@ -1,26 +1,24 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { addInvestment } from "@/lib/actions";
 import { Plus } from "lucide-react";
 
 export function InvestmentForm() {
   const formRef = useRef<HTMLFormElement>(null);
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(formData: FormData) {
     setLoading(true);
-
-    // Se quiser ver os valores, extraia-os do formData aqui:
-    const asset = formData.get("asset");
-    const amount = formData.get("amount");
-    const purchase_price = formData.get("purchase_price");
-    const date = formData.get("date");
-    console.log("Adicionando:", { asset, amount, purchase_price, date });
-    
-    await addInvestment(formData);
-    formRef.current?.reset();
-    setLoading(false);
+    try {
+      await addInvestment(formData);
+      formRef.current?.reset();
+      router.refresh();
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (

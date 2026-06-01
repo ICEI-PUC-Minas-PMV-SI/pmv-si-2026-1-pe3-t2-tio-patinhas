@@ -7,10 +7,14 @@ Descrever e especificar as necessidades dos usuários que devem ser atendidas pe
 
 ### 3.2.1 Nome do produto e seus componentes principais
 O produto será denominado **Tio Patinhas – Sistema de Gestão Financeira Pessoal**. A aplicação é composta pelos seguintes módulos principais:
-- **Módulo de Autenticação:** responsável pelo cadastro e login de usuários.
-- **Módulo de Transações:** permite o registro, edição, exclusão e consulta de receitas e despesas.
-- **Módulo de Categorias:** permite a criação e gerenciamento de categorias para classificação das movimentações financeiras.
-- **Módulo de Dashboard/Relatórios:** apresenta visualmente o resumo financeiro por meio de gráficos e painéis.
+- **Módulo de Autenticação:** responsável pelo cadastro e login de usuários (JWT).
+- **Módulo de Transações:** permite o registro, edição, exclusão e consulta de receitas e despesas, com classificação por categoria no momento do cadastro.
+- **Módulo de Dashboard/Relatórios:** apresenta resumo de liquidez, gráficos de despesas por categoria e evolução mensal (últimos 6 meses).
+- **Módulo de Investimentos:** registro e acompanhamento de aportes por ativo (ex.: Tesouro, BTC).
+- **Módulo de Metas:** definição e acompanhamento de objetivos financeiros de curto e longo prazo.
+- **Módulo de Perfil:** atualização de dados pessoais e senha.
+
+> **Categorias (implementação):** não existe módulo/tela de CRUD de categorias exposto ao usuário. As categorias são escolhidas em lista pré-definida na interface de transações e persistidas internamente pelo backend quando a transação é salva (ver seção [3.5](#35-notas-da-implementação-atual)).
 
 ### 3.2.2 Missão do produto
 Oferecer ao usuário uma ferramenta web simples, intuitiva e acessível para o registro, categorização e acompanhamento de suas movimentações financeiras pessoais, contribuindo para uma melhor organização do orçamento e para a tomada de decisões financeiras mais conscientes.
@@ -22,7 +26,8 @@ O sistema **Tio Patinhas** não contempla:
 - Gestão financeira empresarial ou corporativa.
 - Suporte a múltiplos usuários compartilhando o mesmo perfil financeiro.
 - Emissão de notas fiscais ou documentos contábeis oficiais.
-- Planejamento de investimentos ou cálculo de rendimentos.
+- Integração com corretoras ou cotação de ativos em tempo real (a estimativa de BTC no dashboard usa valor fixo de referência no MVP).
+- Cálculo automático de rendimentos ou rentabilidade histórica de investimentos.
 
 ### 3.2.4 Benefícios do produto
 
@@ -47,9 +52,9 @@ O sistema **Tio Patinhas** não contempla:
 | RF02 | Usuário se Autentica | O sistema deve permitir login por e-mail e senha, garantindo acesso apenas ao perfil do usuário autenticado. | Essencial |
 | RF03 | Usuário Gerencia as Transações | O sistema deve permitir inclusão, alteração, exclusão e consulta de transações financeiras (receitas e despesas). | Essencial |
 | RF04 | Usuário Classifica as Transações por Tipo | O sistema deve permitir que cada transação seja classificada como **receita** ou **despesa**. | Essencial |
-| RF05 | Usuário Gerencia as Categorias | O sistema deve permitir que o usuário crie, edite, exclua e consulte categorias para classificação das transações (ex.: alimentação, transporte, lazer). | Essencial |
-| RF06 | Usuário Visualiza o Saldo Atual | O sistema deve calcular e exibir o saldo atual do usuário com base na diferença entre receitas e despesas registradas. | Essencial |
-| RF07 | Usuário Visualiza o Dashboard | O sistema deve exibir um resumo financeiro do **mês vigente**, contendo: saldo total acumulado, somatório de receitas e despesas do mês e um indicador de percentual de gastos. | Essencial |
+| RF05 | Usuário Classifica Transações por Categoria | O sistema deve permitir associar cada transação a uma categoria (lista pré-definida na interface, ex.: Moradia, Alimentação). O backend persiste a categoria vinculada ao usuário; **não** há tela de CRUD de categorias. | Essencial |
+| RF06 | Usuário Visualiza o Saldo Atual (Liquidez) | O sistema deve calcular e exibir a **liquidez** (saldo de caixa) com base na diferença acumulada entre todas as receitas e despesas registradas. | Essencial |
+| RF07 | Usuário Visualiza o Dashboard | O sistema deve exibir painel com: **patrimônio estimado** (liquidez + BTC, quando houver), receitas e despesas consolidadas, gráfico de despesas por categoria, evolução dos **últimos 6 meses** com saldo acumulado e resumo de metas. | Essencial |
 | RF08 | Usuário Filtra as Transações | O sistema deve permitir filtrar as transações por período (data inicial e final), tipo (receita/despesa) e categoria. | Recomendável |
 | RF09 | Usuário Recupera a Senha | O sistema deve oferecer mecanismo de recuperação de senha por e-mail cadastrado. | Desejável |
 | RF10 | Usuário Gerencia o Perfil | O sistema deve permitir que o usuário atualize seus dados pessoais e senha de acesso. | Desejável |
@@ -67,7 +72,7 @@ O sistema **Tio Patinhas** não contempla:
 | RNF05 | **Disponibilidade** Acesso via navegador sem necessidade de plugins ou software adicional. |
 | RNF06 | **Manutenibilidade** Código modular seguindo padrões de arquitetura (ex.: Clean Architecture ou MVC). |
 | RNF07 | **Acessibilidade:** A interface deve adotar boas práticas de acessibilidade web (contraste adequado, textos descritivos em imagens e navegação por teclado). |
-| RNF08 | **Persistência de dados:** Os dados dos usuários devem ser armazenados em banco de dados relacional, garantindo integridade e consistência das informações. |
+| RNF08 | **Persistência de dados:** Os dados dos usuários devem ser armazenados em banco relacional com integridade e consistência. Na implementação atual utiliza-se **SQLite** (`tiopatinhas.db`) com Entity Framework Core. |
 
 ### 3.3.3 Usuários 
 
@@ -216,6 +221,8 @@ d) O Sistema apresenta os detalhes da transação. <br>
 
 #### Gerenciar Categorias por Tipo (CSU05)
 
+> **Status na implementação:** o caso de uso original (CRUD de categorias) **não** foi exposto como funcionalidade independente. A classificação ocorre no fluxo de **Gerenciar Transações (CSU04)** mediante seleção de categoria na lista pré-definida do formulário.
+
 Sumário: O Usuário realiza a gestão das categorias por tipo, podendo incluir, alterar, excluir e consultar categorias vinculadas às transações financeiras.
 
 Ator Primário: Usuário.
@@ -275,7 +282,7 @@ Fluxo Principal:
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes apresenta as principais entidades do sistema e seus relacionamentos. O **Usuário** é a entidade central, possuindo diversas **Transações**, cada uma associada a uma **Categoria**. O sistema calcula automaticamente o **Saldo** com base nas transações registradas.
+A Figura 2 apresenta as principais entidades do sistema e seus relacionamentos. O **Usuário** é a entidade central, possuindo **Transações** (associadas a **Categoria** interna), **Investimentos** e **Metas**. O saldo de liquidez é derivado das transações; o patrimônio exibido no dashboard pode incluir estimativa de ativos em BTC.
 
 #### Figura 2: Diagrama de Classes do Sistema.
 
@@ -288,5 +295,50 @@ A Figura 2 mostra o diagrama de classes apresenta as principais entidades do sis
 |---|------|-----------|
 | 1 | Usuário | Armazena os dados de cadastro do usuário (id, nome, e-mail, senha criptografada, data de cadastro). |
 | 2 | Transação | Representa uma movimentação financeira (id, descrição, valor, data, tipo [receita/despesa], id_categoria, id_usuário). |
-| 3 | Categoria | Representa uma categoria de classificação das transações (id, nome, id_usuário). |
+| 3 | Categoria | Classificação das transações (id, nome, tipo receita/despesa, id_usuário). Criada/vinculada automaticamente ao salvar transação; sem API pública de manutenção. |
+| 4 | Investimento | Aporte em ativo (id, ativo, quantidade, preço de compra, data, id_usuário). |
+| 5 | Meta | Objetivo financeiro (id, título, valor alvo, valor atual, prazo, tipo curto/longo prazo, id_usuário). |
+
+## 3.5 Notas da implementação atual
+
+Esta seção registra o comportamento do código entregue em `src/Frontend` e `src/backend/TioPatinhas.Api`, para alinhar a documentação acadêmica ao sistema executável.
+
+### API e integração
+
+- Contrato HTTP: `src/Frontend/API_CONTRACT.md` (rotas na raiz, ex.: `/transactions`, `/auth`, `/investments`, `/goals`).
+- Autenticação: `Authorization: Bearer <token>`; rotas públicas apenas `/auth/register` e `/auth/login`.
+- Rotas antigas `/api/Transactions` e `/api/Categories` foram descontinuadas.
+
+### Categorias
+
+- O usuário seleciona categoria no formulário de transação (lista fixa no frontend).
+- O corpo da requisição envia o campo `category` (texto); o backend resolve ou cria o registro em `Categories` via serviço interno.
+- Relatório `GET /transactions/expenses-by-category` agrupa despesas pelo **nome** da categoria.
+
+### Dashboard e relatórios
+
+| Indicador | Regra |
+|-----------|--------|
+| Receitas / Despesas (cards) | Soma de **todas** as transações do tipo correspondente |
+| Liquidez | Receitas totais − despesas totais (`GET /transactions/summary`) |
+| Nível da Caixa-Forte | Liquidez + (quantidade BTC × R$ 340.000 no MVP) |
+| Gráfico de evolução | 6 meses; `balance` em cada mês = saldo acumulado incluindo meses anteriores ao intervalo |
+| Último ponto do gráfico “Saldo acumulado” | Deve coincidir com a liquidez do resumo |
+
+### Investimentos
+
+- CRUD completo em `/investments`.
+- BTC no dashboard: soma apenas investimentos cujo ativo é `BTC` ou `BITCOIN` (case insensitive).
+- Cotação não vem da API; valor de referência fixo no frontend para demonstração.
+
+### Metas e perfil
+
+- Metas: tipos `short_term` e `long_term`; CRUD em `/goals`.
+- Perfil: `GET/PUT /profile` e `PUT /profile/password`.
+
+### Funcionalidades previstas e ainda não entregues
+
+- **RF08** — filtros de transações por período, tipo e categoria na listagem.
+- **RF09** — recuperação de senha por e-mail.
+- **CSU05** — CRUD dedicado de categorias (substituído pela classificação no cadastro de transação).
 

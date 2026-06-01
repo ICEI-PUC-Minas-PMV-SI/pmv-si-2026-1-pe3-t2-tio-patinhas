@@ -1,15 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Bitcoin, TrendingUp, Pencil, Trash2, Check, X } from "lucide-react";
 import { deleteInvestment, updateInvestment } from "@/lib/actions";
+import { isBtcAsset, type Investment } from "@/lib/investments";
 
-export function InvestmentRow({ inv, currentBtcPrice }: { inv: any, currentBtcPrice: number }) {
+export function InvestmentRow({ inv, currentBtcPrice }: { inv: Investment; currentBtcPrice: number }) {
+  const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const purchase_price = inv.purchasePrice ?? inv.purchase_price;
-  const isBtc = inv.asset.toUpperCase() === 'BTC';
+  const purchase_price = inv.purchase_price;
+  const isBtc = isBtcAsset(inv.asset);
   const currentPrice = isBtc ? currentBtcPrice : purchase_price;
   const totalValue = inv.amount * currentPrice;
   const hasProfit = currentPrice >= purchase_price;
@@ -18,6 +21,7 @@ export function InvestmentRow({ inv, currentBtcPrice }: { inv: any, currentBtcPr
     if (confirm("Tem certeza que deseja excluir este investimento?")) {
       setLoading(true);
       await deleteInvestment(inv.id);
+      router.refresh();
       setLoading(false);
     }
   }
@@ -26,6 +30,7 @@ export function InvestmentRow({ inv, currentBtcPrice }: { inv: any, currentBtcPr
     setLoading(true);
     await updateInvestment(inv.id, formData);
     setIsEditing(false);
+    router.refresh();
     setLoading(false);
   }
 

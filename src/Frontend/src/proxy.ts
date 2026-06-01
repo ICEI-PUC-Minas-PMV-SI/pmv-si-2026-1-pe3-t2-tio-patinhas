@@ -1,12 +1,17 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getSession } from "./lib/session";
 
-const protectedRoutes = ["/", "/transactions", "/investments", "/profile"];
+const protectedRoutes = ["/", "/transactions", "/investments", "/goals", "/profile"];
 const publicRoutes = ["/login", "/register"];
 
 export default async function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
-  const isProtectedRoute = protectedRoutes.includes(path) || path.startsWith("/transactions") || path.startsWith("/investments") || path.startsWith("/profile");
+  const isProtectedRoute =
+    protectedRoutes.includes(path) ||
+    path.startsWith("/transactions") ||
+    path.startsWith("/investments") ||
+    path.startsWith("/goals") ||
+    path.startsWith("/profile");
   const isPublicRoute = publicRoutes.includes(path);
 
   const session = await getSession();

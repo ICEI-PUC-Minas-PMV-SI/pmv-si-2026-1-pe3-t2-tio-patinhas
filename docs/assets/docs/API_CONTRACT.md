@@ -1,6 +1,8 @@
-# Contrato de API (Frontend -> Backend)
+# Contrato de API (Frontend ↔ Backend)
 
-Este documento descreve como o backend deve estruturar suas rotas, requisições e respostas para que o frontend do **Tio Patinhas (Dashboard Financeiro)** funcione corretamente. 
+Cópia de referência do contrato. **Fonte de verdade:** [`src/Frontend/API_CONTRACT.md`](../../../src/Frontend/API_CONTRACT.md).
+
+Este documento descreve as rotas da API **Tio Patinhas**. **Não utilizado:** `/api/Transactions`, `/api/Categories` ou CRUD público de categorias. Categorias são enviadas como campo `category` (string) nas transações.
 
 ## Autenticação (Headers)
 Todas as rotas (exceto `/auth/login` e `/auth/register`) deverão ser protegidas. 
@@ -87,8 +89,9 @@ Caso o token seja inválido ou esteja ausente, o backend deve retornar status HT
 
 ## 2. Dashboard e Relatórios
 
-### 2.1 Resumo de Saldo
+### 2.1 Resumo de Saldo (liquidez)
 - **Endpoint:** `GET /transactions/summary`
+- **Regra:** Totais de **todas** as transações; `balance` = liquidez (`income` - `expense`).
 - **Response Esperada:**
   ```json
   {
@@ -110,11 +113,12 @@ Caso o token seja inválido ou esteja ausente, o backend deve retornar status HT
 
 ### 2.3 Evolução Mensal
 - **Endpoint:** `GET /transactions/monthly-evolution`
-- **Response Esperada:** Array de meses (recomenda-se os últimos 6 meses).
+- **Regra:** Últimos 6 meses; `balance` = saldo acumulado ao fim de cada mês (ver contrato completo em `src/Frontend/API_CONTRACT.md`).
+- **Response Esperada:**
   ```json
   [
     { "name": "01/2026", "income": 5000, "expense": 4000, "balance": 1000 },
-    { "name": "02/2026", "income": 5000, "expense": 4200, "balance": 800 }
+    { "name": "02/2026", "income": 5000, "expense": 4200, "balance": 1800 }
   ]
   ```
 

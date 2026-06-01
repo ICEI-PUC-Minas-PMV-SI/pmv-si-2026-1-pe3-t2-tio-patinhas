@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
 interface DataItem {
@@ -10,8 +10,62 @@ interface DataItem {
   balance: number;
 }
 
-export function EvolutionChart({ data }: { data: DataItem[] }) {
+type ChartPoint = DataItem & {
+  incomeMonth: number;
+  expenseMonth: number;
+  monthNet: number;
+};
+
+/**
+ * Saldo acumulado = patrimônio líquido até aquele mês.
+ * Usa totalBalance (liquidez do resumo) para incluir transações fora da janela de 6 meses.
+ */
+function buildChartData(data: DataItem[], totalBalance?: number): ChartPoint[] {
+  const monthNets = data.map((item) => item.income - item.expense);
+  const sumInWindow = monthNets.reduce((sum, net) => sum + net, 0);
+  let runningBalance =
+    totalBalance != null ? totalBalance - sumInWindow : 0;
+
+  let accIncome = 0;
+  let accExpense = 0;
+
+  return data.map((item, index) => {
+    const monthNet = monthNets[index];
+    accIncome += item.income;
+    accExpense += item.expense;
+    runningBalance += monthNet;
+
+    return {
+      name: item.name,
+      incomeMonth: item.income,
+      expenseMonth: item.expense,
+      monthNet,
+      income: accIncome,
+      expense: accExpense,
+      balance: runningBalance,
+    };
+  });
+}
+
+const METRIC_LABELS: Record<string, string> = {
+  balance: "Saldo acumulado",
+  income: "Receitas acumuladas",
+  expense: "Despesas acumuladas",
+};
+
+export function EvolutionChart({
+  data,
+  totalBalance,
+}: {
+  data: DataItem[];
+  /** Liquidez total (summary.balance) para alinhar o saldo acumulado ao resumo */
+  totalBalance?: number;
+}) {
   const [metric, setMetric] = useState("balance");
+  const chartData = useMemo(
+    () => buildChartData(data, totalBalance),
+    [data, totalBalance]
+  );
 
   return (
     <div className="h-full w-full min-h-[350px] flex flex-col">
@@ -22,9 +76,9 @@ export function EvolutionChart({ data }: { data: DataItem[] }) {
           value={metric}
           onChange={(e) => setMetric(e.target.value)}
         >
-          <option value="balance">Patrimônio / Saldo Líquido</option>
-          <option value="income">Apenas Receitas</option>
-          <option value="expense">Apenas Despesas</option>
+          <option value="balance">Saldo acumulado (patrimônio)</option>
+          <option value="income">Receitas acumuladas</option>
+          <option value="expense">Despesas acumuladas</option>
         </select>
       </div>
       
@@ -35,7 +89,7 @@ export function EvolutionChart({ data }: { data: DataItem[] }) {
           </div>
         ) : (
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={data} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
+            <LineChart data={chartData} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
               <XAxis 
                 dataKey="name" 
@@ -53,13 +107,29 @@ export function EvolutionChart({ data }: { data: DataItem[] }) {
               />
               <Tooltip 
                 contentStyle={{ borderRadius: '12px', border: '1px solid #E5E7EB', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
-                formatter={(value: any) => [`R$ ${Number(value).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`, metric === 'balance' ? 'Saldo' : metric === 'income' ? 'Receita' : 'Despesa']}
+                formatter={(value: any, _name: string, props: { payload?: ChartPoint }) => {
+                  const row = props.payload;
+                  const label = METRIC_LABELS[metric] ?? "Valor";
+                  const monthNet = row?.monthNet ?? 0;
+                  const monthHint =
+                    row && metric === "income" && row.incomeMonth > 0
+                      ? ` (mês: R$ ${row.incomeMonth.toLocaleString("pt-BR", { minimumFractionDigits: 2 })})`
+                      : row && metric === "expense" && row.expenseMonth > 0
+                        ? ` (mês: R$ ${row.expenseMonth.toLocaleString("pt-BR", { minimumFractionDigits: 2 })})`
+                        : row && metric === "balance" && monthNet !== 0
+                          ? ` (mês: R$ ${monthNet.toLocaleString("pt-BR", { minimumFractionDigits: 2 })})`
+                          : "";
+                  return [
+                    `R$ ${Number(value).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}${monthHint}`,
+                    label,
+                  ];
+                }}
                 labelStyle={{ fontWeight: 'bold', color: '#1A237E', marginBottom: '8px' }}
               />
               <Legend wrapperStyle={{ paddingTop: '20px' }} iconType="circle" />
-              {metric === "balance" && <Line type="monotone" dataKey="balance" name="Saldo Líquido" stroke="#1A237E" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#1A237E', stroke: '#FFD700', strokeWidth: 2 }} animationDuration={1000} />}
-              {metric === "income" && <Line type="monotone" dataKey="income" name="Receitas" stroke="#10B981" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#10B981', stroke: '#fff', strokeWidth: 2 }} animationDuration={1000} />}
-              {metric === "expense" && <Line type="monotone" dataKey="expense" name="Despesas" stroke="#EF4444" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#EF4444', stroke: '#fff', strokeWidth: 2 }} animationDuration={1000} />}
+              {metric === "balance" && <Line type="monotone" dataKey="balance" name="Saldo acumulado" stroke="#1A237E" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#1A237E', stroke: '#FFD700', strokeWidth: 2 }} animationDuration={1000} />}
+              {metric === "income" && <Line type="monotone" dataKey="income" name="Receitas acumuladas" stroke="#10B981" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#10B981', stroke: '#fff', strokeWidth: 2 }} animationDuration={1000} />}
+              {metric === "expense" && <Line type="monotone" dataKey="expense" name="Despesas acumuladas" stroke="#EF4444" strokeWidth={3} dot={{ r: 4, strokeWidth: 2, fill: '#fff' }} activeDot={{ r: 6, fill: '#EF4444', stroke: '#fff', strokeWidth: 2 }} animationDuration={1000} />}
             </LineChart>
           </ResponsiveContainer>
         )}

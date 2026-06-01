@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowUpRight, TrendingUp, Bitcoin, WalletCards } from "lucide-react";
 import Link from "next/link";
 import { getBalanceSummary, getCategoryExpenses, getMonthlyEvolution, getInvestments } from "@/lib/actions";
+import { formatBtcAmount, sumBtcAmount } from "@/lib/investments";
 import { getGoals } from "@/lib/goalsActions";
 import { EvolutionChart } from "@/components/charts/EvolutionChart";
 import { ExpenseChart } from "@/components/charts/ExpenseChart";
@@ -19,9 +20,7 @@ export default async function DashboardPage() {
   // Simple hardcoded BTC price for MVP visualization purposes
   const currentBtcPrice = 340000;
   
-  const totalBtc = investments
-    .filter((i: any) => i.asset.toUpperCase() === 'BTC')
-    .reduce((acc: number, curr: any) => acc + curr.amount, 0);
+  const totalBtc = sumBtcAmount(investments);
 
   const totalBtcValue = totalBtc * currentBtcPrice;
   const totalPatrimony = balance + totalBtcValue;
@@ -57,7 +56,7 @@ export default async function DashboardPage() {
         />
         <StatCard 
           title="Patrimônio Bitcoin" 
-          value={`${totalBtc.toFixed(4)} BTC`} 
+          value={`${formatBtcAmount(totalBtc)} BTC`} 
           subtitle={`Aprox: R$ ${totalBtcValue.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`} 
           icon={<Bitcoin className="text-[#F7931A]" size={24} />}
         />
@@ -79,7 +78,7 @@ export default async function DashboardPage() {
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Gráfico principal ocupar 2 colunas */}
         <div className="bg-white rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 p-6 lg:col-span-2 min-h-[400px]">
-           <EvolutionChart data={evolutionData} />
+           <EvolutionChart data={evolutionData} totalBalance={balance} />
         </div>
 
         {/* Gráfico secundário 1 coluna */}
