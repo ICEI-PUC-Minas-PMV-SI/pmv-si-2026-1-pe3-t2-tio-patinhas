@@ -143,6 +143,13 @@ Em `appsettings.json`:
 
 Os valores padrão do repositório funcionam em desenvolvimento local. Não reutilize a chave JWT de desenvolvimento em produção.
 
+O arquivo `tiopatinhas.db` versionado inclui **dados de exemplo**. Na primeira execução em Development, se o usuário demo ainda não existir, o sistema também pode popular via seed automático. Credenciais de demonstração:
+
+| Campo | Valor |
+|-------|--------|
+| E-mail | `demo@tiopatinhas.dev` |
+| Senha | `Demo@123` |
+
 #### 5. Subir a API
 
 ```bash

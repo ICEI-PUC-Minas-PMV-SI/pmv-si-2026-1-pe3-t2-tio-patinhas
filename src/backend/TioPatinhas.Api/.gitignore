@@ -106,6 +106,10 @@ $tf/
 # Dotnet watch
 **/node_modules/
 
+# SQLite (arquivos temporários de runtime — não versionar)
+*.db-shm
+*.db-wal
+
 # Others
 *.dbmdl
 *.bak
