@@ -361,6 +361,6 @@ Avaliação de Pedro: [Avaliação Heurística de Pedro](/docs/assets/docs/Avali
 
 Avaliação de Isadora: [Avaliação Heurística de Isadora]()<br>
 
-Avaliação de André: [Avaliação Heurística de André]()<br>
+Avaliação de André: [Avaliação Heurística de André](/docs/assets/docs/Avaliacao_Heuristica_Andre_Bacelar.pdf)<br>
 
 Avaliação de Raphael: [Avaliação Heurística de Raphael]()<br>
