@@ -118,7 +118,10 @@ dotnet build
 
 A API usa o arquivo `tiopatinhas.db` na pasta do projeto (configurado em `appsettings.json`).
 
-Ao iniciar em ambiente de desenvolvimento, as migrações do Entity Framework são aplicadas automaticamente (`Database.Migrate()` no `Program.cs`).
+Ao iniciar em **Development**, o `Program.cs`:
+
+1. Aplica migrações automaticamente (`Database.Migrate()`).
+2. Executa o seed de demonstração (`ExampleDataSeeder`) **somente se** o e-mail `demo@tiopatinhas.dev` ainda não existir.
 
 Para atualizar o banco manualmente (opcional):
 
@@ -132,6 +135,47 @@ Se o comando `dotnet ef` não for reconhecido:
 dotnet tool install --global dotnet-ef
 ```
 
+##### O que vai para o Git
+
+| Arquivo | Versionado? | Motivo |
+|---------|-------------|--------|
+| `tiopatinhas.db` | Sim | Banco com **estrutura** (tabelas/migrações) e **registros de exemplo** para testar sem cadastrar tudo |
+| `tiopatinhas.db-shm` | Não | Arquivo temporário do SQLite (API em execução) — ignorado em `.gitignore` |
+| `tiopatinhas.db-wal` | Não | Arquivo temporário do SQLite (API em execução) — ignorado em `.gitignore` |
+
+**Estrutura no repositório:** além das tabelas já existentes (`Users`, `Categories`, `Transactions`, `Goals`, etc.), a migração `AddInvestments` criou a tabela **`Investments`**. Não há colunas novas nas tabelas antigas — apenas essa tabela extra.
+
+**Registros de exemplo** (usuário demo): 12 transações (receitas/despesas em vários meses), 2 investimentos (BTC e Tesouro Direto) e 2 metas (curto e longo prazo).
+
+##### Usuário de demonstração
+
+Use no **frontend** (http://localhost:3000 → Login) ou no Swagger (`POST /auth/login`):
+
+| Campo | Valor |
+|-------|--------|
+| E-mail | `demo@tiopatinhas.dev` |
+| Senha | `Demo@123` |
+
+Com esse login você já vê dashboard, gráficos, investimentos e metas populados.
+
+##### Recriar o banco do zero
+
+Com a API **parada**:
+
+```powershell
+# Windows — na pasta TioPatinhas.Api
+Remove-Item tiopatinhas.db -ErrorAction SilentlyContinue
+dotnet run
+```
+
+```bash
+# Linux / macOS
+rm -f tiopatinhas.db
+dotnet run
+```
+
+Na próxima subida, as migrações recriam o arquivo e o seed insere o usuário demo novamente.
+
 #### 4. Configuração
 
 Em `appsettings.json`:
@@ -142,13 +186,6 @@ Em `appsettings.json`:
 | `Jwt:Key` | Chave para assinar tokens JWT |
 
 Os valores padrão do repositório funcionam em desenvolvimento local. Não reutilize a chave JWT de desenvolvimento em produção.
-
-O arquivo `tiopatinhas.db` versionado inclui **dados de exemplo**. Na primeira execução em Development, se o usuário demo ainda não existir, o sistema também pode popular via seed automático. Credenciais de demonstração:
-
-| Campo | Valor |
-|-------|--------|
-| E-mail | `demo@tiopatinhas.dev` |
-| Senha | `Demo@123` |
 
 #### 5. Subir a API
 
@@ -232,7 +269,11 @@ Reinicie o `npm run dev` após alterar o `.env.local`.
 npm run dev
 ```
 
-Acesse **http://localhost:3000**, cadastre-se ou faça login e use o dashboard (transações, investimentos, metas).
+Acesse **http://localhost:3000**.
+
+**Teste rápido com dados de exemplo:** faça login com `demo@tiopatinhas.dev` / `Demo@123` (ver [banco de dados](#3-banco-de-dados-sqlite)). Você também pode cadastrar um usuário novo em **Registrar**.
+
+Navegue pelo dashboard, transações, investimentos e metas.
 
 #### 5. Build de produção (opcional)
 
@@ -256,6 +297,7 @@ npm run lint
 - [ ] Swagger abre em http://localhost:5256/swagger
 - [ ] `.env.local` aponta para `http://localhost:5256`
 - [ ] Frontend abre em http://localhost:3000
+- [ ] Login com `demo@tiopatinhas.dev` / `Demo@123` abre o dashboard com dados
 - [ ] Cadastro ou login funcionam sem erro de conexão
 
 ### Problemas comuns
@@ -266,7 +308,9 @@ npm run lint
 | Porta **3000** em uso | Feche outro `next dev` ou rode `npm run dev -- -p 3000` e alinhe o CORS no backend |
 | Frontend não conecta na API | Confirme que a API está rodando, que `NEXT_PUBLIC_API_URL` está correto e reinicie o frontend |
 | `dotnet build` falha (arquivo em uso) | Pare a API antes de compilar |
-| Banco inconsistente | Com a API parada, apague `tiopatinhas.db` em `src/backend/TioPatinhas.Api` e execute `dotnet run` novamente |
+| Banco inconsistente | Com a API parada, apague `tiopatinhas.db` e execute `dotnet run` (migrações + seed recriam o demo) |
+| Arquivos `tiopatinhas.db-shm` / `.db-wal` no Git | Não commite; estão no `.gitignore`. Pare a API antes de `git add` do `.db` |
+| `dotnet build` com API rodando | Pare a API (`Ctrl+C`); arquivos `.db-shm`/`.db-wal` indicam que o processo ainda está ativo |
 
 ### Comandos resumidos
 
