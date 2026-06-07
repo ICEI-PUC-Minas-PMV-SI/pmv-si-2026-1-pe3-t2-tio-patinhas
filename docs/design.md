@@ -358,14 +358,14 @@ Relatório de testes com usuário 04 - Fase 02: [Relatório 04](/docs/assets/doc
 
 ## 4.5 Avaliações Heurísticas
 
-Avaliação de Wesley: [Avaliação Heurística de Wesley](/docs/assets/docs/Avaliação_Heurística_Wesley_Azevedo.pdf)<br>
+Avaliação de Wesley: [Avaliação Heurística de Wesley](/docs/assets/docs/Avaliação_Heurística_Wesley_Azevedo.pdf)<br>
 
 Avaliação de Igor: [Avaliação Heurística de Igor](/docs/assets/docs/Avaliação_Heurística_Igor_Fernando_Costa.pdf)<br>
 
 Avaliação de Pedro: [Avaliação Heurística de Pedro](/docs/assets/docs/Avaliacao_Heuristica_Pedro_Lyra.pdf)<br>
 
-Avaliação de Isadora: [Avaliação Heurística de Isadora]()<br>
+Avaliação de Isadora: [Avaliação Heurística de Isadora](/docs/assets/docs/Avaliacao_Heuristica_Isadora_Matos.pdf)<br>
 
 Avaliação de André: [Avaliação Heurística de André](/docs/assets/docs/Avaliacao_Heuristica_Andre_Bacelar.pdf)<br>
 
-Avaliação de Raphael: [Avaliação Heurística de Raphael]()<br>
+Avaliação de Raphael: [Avaliação Heurística de Raphael](/docs/assets/docs/Avaliacao_Heuristica_Raphael_Caracci.pdf)<br>
