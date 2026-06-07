@@ -348,6 +348,9 @@ Relatório de testes com usuário 04: [Relatório 04](/docs/assets/docs/Relatori
 Relatório de testes com usuário 05: [Relatório 05](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_05.pdf)<br>
 Relatório de testes com usuário 06: [Relatório 06](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_06.pdf)<br>
 
+## 4.4.1 Testes com Protótipos - Fase 02
+
+Relatório de testes com usuário 01 - Fase 02: [Relatório 01](/docs/assets/docs/Relatorio_de_Testes_com_Usarios_fase2/Relatório_de_Testes_com_Usuário-01-Fase2%20.pdf)<br>
 
 --- 
 
