@@ -8,13 +8,11 @@ Descrever e especificar as necessidades dos usuários que devem ser atendidas pe
 ### 3.2.1 Nome do produto e seus componentes principais
 O produto será denominado **Tio Patinhas – Sistema de Gestão Financeira Pessoal**. A aplicação é composta pelos seguintes módulos principais:
 - **Módulo de Autenticação:** responsável pelo cadastro e login de usuários (JWT).
-- **Módulo de Transações:** permite o registro, edição, exclusão e consulta de receitas e despesas, com classificação por categoria no momento do cadastro.
-- **Módulo de Dashboard/Relatórios:** apresenta resumo de liquidez, gráficos de despesas por categoria e evolução mensal (últimos 6 meses).
+- **Módulo de Transações:** permite o registro de uma transação finaceira, com edição, exclusão e consulta de receitas e despesas.
+- **Módulo de Dashboard/Relatórios:** apresenta resumo de liquidez, gráficos de despesas e evolução mensal (últimos 6 meses).
 - **Módulo de Investimentos:** registro e acompanhamento de aportes por ativo (ex.: Tesouro, BTC).
 - **Módulo de Metas:** definição e acompanhamento de objetivos financeiros de curto e longo prazo.
 - **Módulo de Perfil:** atualização de dados pessoais e senha.
-
-> **Categorias (implementação):** não existe módulo/tela de CRUD de categorias exposto ao usuário. As categorias são escolhidas em lista pré-definida na interface de transações e persistidas internamente pelo backend quando a transação é salva (ver seção [3.5](#35-notas-da-implementação-atual)).
 
 ### 3.2.2 Missão do produto
 Oferecer ao usuário uma ferramenta web simples, intuitiva e acessível para o registro, categorização e acompanhamento de suas movimentações financeiras pessoais, contribuindo para uma melhor organização do orçamento e para a tomada de decisões financeiras mais conscientes.
