@@ -323,7 +323,7 @@ A Figura 2 apresenta as principais entidades do sistema e seus relacionamentos. 
 
 #### Figura 2: Diagrama de Classes do Sistema.
 
-![image](https://github.com/user-attachments/assets/f35d9263-51f1-4a1e-b44c-348f59ca111e)
+![image](https://github.com/user-attachments/assets/a3bf8146-d862-45ba-a125-b836273c6e9a)
 
 
 ### 3.4.4 Descrições das Classes 
