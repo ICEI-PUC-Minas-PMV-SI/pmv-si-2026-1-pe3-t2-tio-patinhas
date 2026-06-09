@@ -87,7 +87,7 @@ Como observado no diagrama de casos de uso da Figura 1, o usuário poderá se ca
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](<img width="529" height="486" alt="Captura de tela de 2026-06-09 15-12-59" src="https://github.com/user-attachments/assets/7d507e09-ff6d-4ab0-b005-a5d70a5845bd" />)
+![dcu](/docs/assets/img/Captura de tela de 2026-06-09 15-22-09.png)<br>
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -219,11 +219,9 @@ b) O Sistema apresenta uma lista de transações cadastradas. <br>
 c) O Usuário seleciona a transação. <br>
 d) O Sistema apresenta os detalhes da transação. <br>
 
-#### Gerenciar Categorias por Tipo (CSU05)
+#### Gerenciar Metas (CSU05)
 
-> **Status na implementação:** o caso de uso original (CRUD de categorias) **não** foi exposto como funcionalidade independente. A classificação ocorre no fluxo de **Gerenciar Transações (CSU04)** mediante seleção de categoria na lista pré-definida do formulário.
-
-Sumário: O Usuário realiza a gestão das categorias por tipo, podendo incluir, alterar, excluir e consultar categorias vinculadas às transações financeiras.
+Sumário: O Usuário realiza a gestão de suas metas financeiras, podendo incluir, alterar, excluir e consultar metas de economia ou planejamento financeiro.
 
 Ator Primário: Usuário.
 
@@ -233,36 +231,77 @@ Pré-condições: O Usuário deve estar autenticado no sistema.
 
 Fluxo Principal:
 
-1) O Usuário requisita manutenção de categorias por tipo.  
-2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova categoria, alteração de uma categoria, exclusão de uma categoria e consulta de dados de categorias.  
-3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.  
-4) Se o Usuário desejar continuar com a gestão de categorias por tipo, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.  
+1) O Usuário requisita manutenção de metas financeiras.
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova meta, alteração de uma meta, exclusão de uma meta e consulta de dados de metas.
+3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de metas, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.
 
 Fluxo Alternativo (3): Inclusão
 
-a) O Usuário requisita a inclusão de uma categoria por tipo. <br>
-b) O Sistema apresenta um formulário para preenchimento dos dados da categoria. <br>
-c) O Usuário fornece os dados solicitados, tais como nome da categoria e tipo associado. <br>
-d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova categoria e a lista de categorias cadastradas é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+a) O Usuário requisita a inclusão de uma meta financeira.  
+b) O Sistema apresenta um formulário para preenchimento dos dados da meta.  
+c) O Usuário fornece os dados solicitados, tais como nome da meta, valor alvo, prazo e descrição.  
+d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova meta e atualiza a lista de metas cadastradas; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação.
 
 Fluxo Alternativo (3): Remoção
 
-a) O Usuário seleciona uma categoria e requisita ao Sistema que a remova. <br>
-b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+a) O Usuário seleciona uma meta e requisita ao Sistema que a remova.  
+b) Se a meta pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
 
 Fluxo Alternativo (3): Alteração
 
-a) O Usuário altera um ou mais dos detalhes da categoria e requisita sua atualização. <br>
-b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados da categoria; caso contrário, o erro é reportado. <br>
+a) O Usuário altera um ou mais dos detalhes da meta e requisita sua atualização.  
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados da meta; caso contrário, o erro é reportado.
 
 Fluxo Alternativo (3): Consulta
 
-a) O Usuário solicita a consulta sobre a lista de categorias. <br>
-b) O Sistema apresenta uma lista de categorias cadastradas. <br>
-c) O Usuário seleciona a categoria. <br>
-d) O Sistema apresenta os detalhes da categoria. <br>
+a) O Usuário solicita a consulta sobre a lista de metas.  
+b) O Sistema apresenta uma lista de metas cadastradas.  
+c) O Usuário seleciona a meta.  
+d) O Sistema apresenta os detalhes e o progresso da meta.
 
-#### Visualizar Dashboard Financeiro (CSU06)
+#### Gerenciar Investimentos (CSU06)
+
+Sumário: O Usuário realiza a gestão de seus investimentos, podendo incluir, alterar, excluir e consultar informações relacionadas aos ativos financeiros cadastrados.
+
+Ator Primário: Usuário.
+
+Ator Secundário: Não há.
+
+Pré-condições: O Usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário requisita manutenção de investimentos.
+2) O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo investimento, alteração de um investimento, exclusão de um investimento e consulta de dados de investimentos.
+3) O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de investimentos, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.
+
+Fluxo Alternativo (3): Inclusão
+
+a) O Usuário requisita a inclusão de um investimento.  
+b) O Sistema apresenta um formulário para preenchimento dos dados do investimento.  
+c) O Usuário fornece os dados solicitados, tais como nome do ativo, quantidade, valor investido e data de aquisição.  
+d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo investimento e atualiza a lista de investimentos cadastrados; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Usuário seleciona um investimento e requisita ao Sistema que o remova.  
+b) Se o investimento pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (3): Alteração
+
+a) O Usuário altera um ou mais dos detalhes do investimento e requisita sua atualização.  
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados do investimento; caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Consulta
+
+a) O Usuário solicita a consulta sobre a lista de investimentos.  
+b) O Sistema apresenta uma lista de investimentos cadastrados.  
+c) O Usuário seleciona o investimento.  
+d) O Sistema apresenta os detalhes do investimento e seu valor atualizado.
+
+#### Visualizar Dashboard Financeiro (CSU07)
 
 Sumário: O Usuário visualiza um painel com resumo de sua situação financeira, incluindo informações consolidadas sobre suas transações.
 
@@ -279,88 +318,6 @@ Fluxo Principal:
 3) O Sistema processa as informações de receitas e despesas registradas.  
 4) O Sistema organiza os dados em formato de painel gerencial.  
 5) O Sistema apresenta o dashboard financeiro ao Usuário.
-
-## Gerenciar Metas (CSU07)
-
-**Sumário:** O Usuário realiza a gestão de suas metas financeiras, podendo incluir, alterar, excluir e consultar metas de economia ou planejamento financeiro.
-
-**Ator Primário:** Usuário.
-
-**Ator Secundário:** Não há.
-
-**Pré-condições:** O Usuário deve estar autenticado no sistema.
-
-### Fluxo Principal
-
-1. O Usuário requisita manutenção de metas financeiras.
-2. O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova meta, alteração de uma meta, exclusão de uma meta e consulta de dados de metas.
-3. O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4. Se o Usuário desejar continuar com a gestão de metas, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.
-
-### Fluxo Alternativo (3): Inclusão
-
-a) O Usuário requisita a inclusão de uma meta financeira.  
-b) O Sistema apresenta um formulário para preenchimento dos dados da meta.  
-c) O Usuário fornece os dados solicitados, tais como nome da meta, valor alvo, prazo e descrição.  
-d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui a nova meta e atualiza a lista de metas cadastradas; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação.
-
-### Fluxo Alternativo (3): Remoção
-
-a) O Usuário seleciona uma meta e requisita ao Sistema que a remova.  
-b) Se a meta pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
-
-### Fluxo Alternativo (3): Alteração
-
-a) O Usuário altera um ou mais dos detalhes da meta e requisita sua atualização.  
-b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados da meta; caso contrário, o erro é reportado.
-
-### Fluxo Alternativo (3): Consulta
-
-a) O Usuário solicita a consulta sobre a lista de metas.  
-b) O Sistema apresenta uma lista de metas cadastradas.  
-c) O Usuário seleciona a meta.  
-d) O Sistema apresenta os detalhes e o progresso da meta.
-
-## Gerenciar Investimentos (CSU08)
-
-**Sumário:** O Usuário realiza a gestão de seus investimentos, podendo incluir, alterar, excluir e consultar informações relacionadas aos ativos financeiros cadastrados.
-
-**Ator Primário:** Usuário.
-
-**Ator Secundário:** Não há.
-
-**Pré-condições:** O Usuário deve estar autenticado no sistema.
-
-### Fluxo Principal
-
-1. O Usuário requisita manutenção de investimentos.
-2. O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo investimento, alteração de um investimento, exclusão de um investimento e consulta de dados de investimentos.
-3. O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4. Se o Usuário desejar continuar com a gestão de investimentos, o caso de uso retorna ao passo 2; caso contrário, o caso de uso termina.
-
-### Fluxo Alternativo (3): Inclusão
-
-a) O Usuário requisita a inclusão de um investimento.  
-b) O Sistema apresenta um formulário para preenchimento dos dados do investimento.  
-c) O Usuário fornece os dados solicitados, tais como nome do ativo, quantidade, valor investido e data de aquisição.  
-d) O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo investimento e atualiza a lista de investimentos cadastrados; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação.
-
-### Fluxo Alternativo (3): Remoção
-
-a) O Usuário seleciona um investimento e requisita ao Sistema que o remova.  
-b) Se o investimento pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
-
-### Fluxo Alternativo (3): Alteração
-
-a) O Usuário altera um ou mais dos detalhes do investimento e requisita sua atualização.  
-b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados do investimento; caso contrário, o erro é reportado.
-
-### Fluxo Alternativo (3): Consulta
-
-a) O Usuário solicita a consulta sobre a lista de investimentos.  
-b) O Sistema apresenta uma lista de investimentos cadastrados.  
-c) O Usuário seleciona o investimento.  
-d) O Sistema apresenta os detalhes do investimento e seu valor atualizado.
 
 ### 3.4.3 Diagrama de Classes 
 
