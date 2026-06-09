@@ -87,7 +87,7 @@ Como observado no diagrama de casos de uso da Figura 1, o usuário poderá se ca
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](/docs/assets/img/Diagrama Caso de Uso - Tio Patinhas.drawio.png)<br>
+![dcu](/docs/assets/img/DiagramaCasodeUso-TioPatinhas.drawio.png)<br>
  
 ### 3.4.2 Descrições de Casos de Uso
 
