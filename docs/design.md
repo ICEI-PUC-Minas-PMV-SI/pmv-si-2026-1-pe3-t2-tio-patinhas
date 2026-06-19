@@ -336,5 +336,3 @@ Permitir que o usuário gerencie as informações pessoais da conta e as credenc
 - **Acessibilidade:** O tamanho dos campos, o espaçamento entre elementos e a dimensão dos botões favorecem a interação em diferentes dispositivos, inclusive em telas menores.
 
 - **Compatibilidade com o usuário:** A linguagem utilizada, como “Caixa-Forte”, “Chave Mestra” e “Mestre da Caixa-Forte”, reforça a metáfora do sistema financeiro e torna a experiência mais intuitiva e coerente com o contexto do produto.
-
----
