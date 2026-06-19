@@ -1,16 +1,37 @@
 # 5. PLANO DE TESTES DE SOFTWARE
    
-Nesta etapa devem ser realizados dois tipos de avaliação: por observação de sessão de uso (teste com usuários) e por inspeção (avaliação heurística, realizada pelos especialistas em usabilidade). Foram disponibilizados em "Material de Apoio" modelos para o registro dos testes que deverão ser realizados da seguinte maneira:
-•	Na avaliação heurística, cada integrante do grupo deverá preencher a planilha correspondente ao teste (arquivo Avaliação_Heurística.xlsx). Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
-•	Na avaliação por observação de sessão de uso, deverão ser definidas tarefas em quantidade igual ao número de integrantes do grupo (ex.: grupo com 5 integrantes, 5 tarefas) e documentadas no relatório de testes com usuário (arquivo Relatório_de_Testes_com_Usuário.docx). Cada integrante do grupo deverá realizar o teste com um usuário distinto (ex.: grupo com 5 integrantes, 5 usuários deverão ser escolhidos, um por cada membro, para a realização dos testes).
+## 5.1 Testes com Protótipos
 
-Ao final, os relatórios gerados por cada membro deverão ser disponibilizados aqui, juntamente com a planilha consolidada da avaliação heurística.
+Relatório de testes com usuário 01: [Relatório 01](/docs/assets/docs/Relatorio_de_Testes_com_Usario-01.pdf)<br>
+Relatório de testes com usuário 02: [Relatório 02](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_02.pdf)<br>
+Relatório de testes com usuário 03: [Relatório 03](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_03.pdf) <br>
+Relatório de testes com usuário 04: [Relatório 04](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_04.pdf) <br>
+Relatório de testes com usuário 05: [Relatório 05](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_05.pdf)<br>
+Relatório de testes com usuário 06: [Relatório 06](/docs/assets/docs/Relatorio_de_Testes_com_Usuário_06.pdf)<br>
 
-Material de apoio para esta etapa:
+## 5.1.1 Testes com Protótipos - Fase 02
+
+Relatório de testes com usuário 01 - Fase 02: [Relatório 01](/docs/assets/docs/Relatorio_de_Testes_com_Usarios_fase2/Relatório_de_Testes_com_Usuário-01-Fase2%20.pdf)<br>
+
+Relatório de testes com usuário 04 - Fase 02: [Relatório 04](/docs/assets/docs/Relatorio_de_Testes_com_Usarios_fase2/Relatorio_de_Testes_com_Usuário_04-Fase2.pdf)<br>
+
+--- 
+
+## 5.2 Avaliações Heurísticas
+
+Avaliação de Wesley: [Avaliação Heurística de Wesley](/docs/assets/docs/Avaliação_Heurística_Wesley_Azevedo.pdf)<br>
+
+Avaliação de Igor: [Avaliação Heurística de Igor](/docs/assets/docs/Avaliação_Heurística_Igor_Fernando_Costa.pdf)<br>
+
+Avaliação de Pedro: [Avaliação Heurística de Pedro](/docs/assets/docs/Avaliacao_Heuristica_Pedro_Lyra.pdf)<br>
+
+Avaliação de Isadora: [Avaliação Heurística de Isadora](/docs/assets/docs/Avaliacao_Heuristica_Isadora_Matos.pdf)<br>
 
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/16501461/Avaliacao_Heuristica.xlsx) 
+Avaliação de André: [Avaliação Heurística de André](/docs/assets/docs/Avaliacao_Heuristica_Andre_Bacelar.pdf)<br>
 
-[Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
+Avaliação de Raphael: [Avaliação Heurística de Raphael](/docs/assets/docs/Avaliacao_Heuristica_Raphael_Caracci.pdf)<br>
 
-[Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
+## 5.3 Consolidação de todas as Avaliações Heurísticas
+
+[Consolidação de todas as Avaliações Heurísticas](/docs/assets/docs/Consolidação_das_Avaliações_Heurísticas.pdf)
